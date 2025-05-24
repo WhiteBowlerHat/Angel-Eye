@@ -1,31 +1,5 @@
 ; ----------------------------------------------------------------------
 ; PARSING Computer POLICY
-; Source file:  C:\\Users\\theim\\Desktop\\Registry.pol
-
-Computer
-Software\Microsoft\Windows\CurrentVersion\Policies\Explorer
-DisallowRun
-DWORD:1
-
-Computer
-Software\Microsoft\Windows\CurrentVersion\Policies\Explorer
-DisallowCpl
-DWORD:1
-
-Computer
-Software\Microsoft\Windows\CurrentVersion\Policies\Explorer\DisallowCpl
-*
-DELETEALLVALUES
-
-Computer
-Software\Microsoft\Windows\CurrentVersion\Policies\Explorer\DisallowCpl
-1
-SZ:Microsoft.UserAccounts
-
-Computer
-Software\Microsoft\Windows\CurrentVersion\Policies\Explorer\DisallowRun
-*
-DELETEALLVALUES
 
 Computer
 Software\Microsoft\Windows\CurrentVersion\Policies\Explorer\DisallowRun
@@ -40,7 +14,7 @@ DWORD:2
 Computer
 Software\Policies\Google\Chrome
 ExtensionSettings
-SZ:{"*":{"installation_mode":"blocked","blocked_install_message":"Maxime a bloqué le téléchargement d'extensions par défaut. Pour télécharger une extension spécifique veuillez le contacter."}}
+SZ:{"*":{"installation_mode":"blocked","blocked_install_message":"Maxime a bloquï¿½ le tï¿½lï¿½chargement d'extensions par dï¿½faut. Pour tï¿½lï¿½charger une extension spï¿½cifique veuillez le contacter."}}
 
 Computer
 Software\Policies\Google\Chrome\NotificationsBlockedForUrls

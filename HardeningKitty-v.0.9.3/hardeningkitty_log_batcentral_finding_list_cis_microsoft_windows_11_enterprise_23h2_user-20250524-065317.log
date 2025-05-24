@@ -1,0 +1,37 @@
+[*] 24/05/2025 06:53:17 - Starting HardeningKitty
+[*] 24/05/2025 06:53:17 - Getting machine information
+[*] Hostname: BATCENTRAL
+[*] Domain: WORKGROUP
+[*] Domain role: StandaloneWorkstation
+[*] Install date: 04/03/2025 03:13:45
+[*] Last Boot Time: 05/23/2025 15:25:10
+[*] Uptime: 15:28:06.9865619
+[*] Windows: Microsoft Windows 11 Professionnel
+[*] Windows edition: Professional
+[*] Windows version: 2009
+[*] Windows build: 26100.1.amd64fre.ge_release.240331-1435
+[*] System-locale: fr-FR
+[*] Powershell Version: 5.1
+[*] 24/05/2025 06:53:19 - Language warning
+[?] 24/05/2025 06:53:19 - HardeningKitty was developed for the system language 'en-US'. This system uses 'fr-FR' Language-dependent analyses can sometimes produce false results. Please create an issue if this occurs.
+[*] 24/05/2025 06:53:19 - Getting user information
+[*] Username: BATCENTRAL\theim
+[*] Is Admin: True
+[*] 24/05/2025 06:53:19 - Starting Category Administrative Templates: Start Menu and Taskbar
+ID 19.5.1.1, Notifications: Turn off toast notifications on the lock screen, Result=0, Recommended=1, Severity=Medium
+[*] 24/05/2025 06:53:19 - Starting Category Administrative Templates: System
+ID 19.6.6.1.1, Internet Communication Management: Internet Communication Settings: Turn off Help Experience Improvement Program, Result=0, Recommended=1, Severity=Medium
+[*] 24/05/2025 06:53:19 - Starting Category Administrative Templates: Windows Components
+ID 19.7.5.1, Attachment Manager: Do not preserve zone information in file attachments, Result=, Recommended=2, Severity=Medium
+ID 19.7.5.2, Attachment Manager: Notify antivirus programs when opening attachments, Result=, Recommended=3, Severity=Medium
+ID 19.7.8.1, Cloud Content: Configure Windows spotlight on lock screen, Result=, Recommended=2, Severity=Medium
+ID 19.7.8.2, Cloud Content: Do not suggest third-party content in Windows spotlight, Result=0, Recommended=1, Severity=Medium
+ID 19.7.8.3, Cloud Content: Do not use diagnostic data for tailored experiences, Result=0, Recommended=1, Severity=Medium
+ID 19.7.8.4, Cloud Content: Turn off all Windows spotlight features, Result=0, Recommended=1, Severity=Medium
+ID 19.7.8.5, Cloud Content: Turn off Spotlight collection on Desktop, Result=, Recommended=1, Severity=Medium
+ID 19.7.26.1, Network Sharing: Prevent users from sharing files within their profile, Result=0, Recommended=1, Severity=Medium
+ID 19.7.38.1, Windows Copilot: Turn off Windows Copilot, Result=0, Recommended=1, Severity=Medium
+ID 19.7.42.1, Windows Installer: Always install with elevated privileges, Result=0, Recommended=0, Severity=Passed
+ID 19.7.44.2.1, Windows Media Player: Playback: Prevent Codec Download, Result=, Recommended=1, Severity=Medium
+[*] 24/05/2025 06:53:20 - HardeningKitty is done
+[*] 24/05/2025 06:53:20 - Your HardeningKitty score is: 2.54. HardeningKitty Statistics: Total checks: 13 - Passed: 1, Low: 0, Medium: 12, High: 0.

@@ -90,6 +90,10 @@
 
         The Filter parameter can be used to filter the hardening list. For this purpose the PowerShell ScriptBlock syntax must be used, for example { $_.ID -eq 4505 }.
         The following elements are useful for filtering: ID, Category, Name, Method, and Severity.
+    
+    .PARAMETER Delimiter
+
+        The Delimiter parameter can be used to change the csv format, french Excel uses semi-colon for csv
 
     .EXAMPLE
         Invoke-HardeningKitty -Mode Audit -Log -Report
@@ -174,7 +178,10 @@
 
          # Define name of the GPO name
         [String]
-        $GPOname
+        $GPOname,
+
+        [Char]
+        $Delimiter
     )
 
     Function Write-ProtocolEntry {
@@ -1563,6 +1570,10 @@
                             ID = $Finding.ID
                             Category = $Finding.Category
                             Name = $Finding.Name
+                            Method = $Finding.Method
+                            MethodArgument = $Finding.MethodArgument
+                            RegistryPath = $Finding.RegistryPath
+                            RegistryItem = $Finding.RegistryItem
                             Severity = "Passed"
                             Result = $Result
                             Recommended = $Finding.RecommendedValue
@@ -1598,6 +1609,10 @@
                             Name = $Finding.Name
                             Severity = $Finding.Severity
                             Result = $Result
+                            Method = $Finding.Method
+                            MethodArgument = $Finding.MethodArgument
+                            RegistryPath = $Finding.RegistryPath
+                            RegistryItem = $Finding.RegistryItem
                             Recommended = $Finding.RecommendedValue
                             TestResult = $TestResult
                             SeverityFinding = $Finding.Severity
@@ -3097,13 +3112,13 @@
      }
 
     Write-Output "`n"
-    Write-ProtocolEntry -Text "HardeningKitty is done" -LogLevel "Info"
+    Write-ProtocolEntry -Text "BADMAX's HardeningKitty is done" -LogLevel "Info"
 
     # Write report file
     If ($Report) {
         ForEach ($ReportResult in $ReportAllResults) {
             $ResultObject = [pscustomobject] $ReportResult
-            $ResultObject | Export-Csv -Path $ReportFile -Delimiter "," -NoTypeInformation -Append
+            $ResultObject | Export-Csv -Path $ReportFile -Delimiter $Delimiter -NoTypeInformation -Append
         }
     }
 
@@ -3111,7 +3126,7 @@
     If ($Backup) {
         ForEach ($BackupResult in $BackupAllResults) {
             $BackupObject = [pscustomobject] $BackupResult
-            $BackupObject | Export-Csv -Path $BackupFile -Delimiter "," -NoTypeInformation -Append
+            $BackupObject | Export-Csv -Path $BackupFile -Delimiter $Delimiter -NoTypeInformation -Append
         }
     }
 

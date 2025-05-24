@@ -36,5 +36,5 @@ exe = EXE(
     codesign_identity=None,
     entitlements_file=None,
     version='version.txt',
-    icon=['C:\\Users\\theim\\Projets\\AngelEye\\resources\\Images\\logo.ico'],
+    icon=['C:\\Users\\theim\\Projets\\Angel-Eye\\resources\\Images\\logo.ico'],
 )

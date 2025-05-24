@@ -102,12 +102,18 @@ def parse_lgpo_txt(path):
 def apply_registry_settings(settings, mount_as, log_fn):
     for subkey, values in settings.items():
         try:
-            key_path = f"{mount_as}\\{subkey}"
-            key = winreg.CreateKey(winreg.HKEY_USERS, key_path)
+            if subkey.startswith("HKLM\\"):
+                key_path = subkey[5:]  # Remove 'HKLM\\'
+                key = winreg.CreateKey(winreg.HKEY_LOCAL_MACHINE, key_path)
+            else:
+                key_path = f"{mount_as}\\{subkey}"
+                key = winreg.CreateKey(winreg.HKEY_USERS, key_path)
+
             for name, entry in values.items():
                 reg_type = reg_type_from_str(entry["type"])
                 value = entry["value"]
                 winreg.SetValueEx(key, name, 0, reg_type, value)
+
             winreg.CloseKey(key)
             log_fn(f"✔ Applied: {subkey}")
         except Exception as e:
@@ -139,7 +145,13 @@ def check_policy(settings, mount_as, log_fn):
     all_match = True
     for subkey, values in settings.items():
         try:
-            key = winreg.OpenKey(winreg.HKEY_USERS, f"{mount_as}\\{subkey}")
+            if subkey.startswith("HKLM\\"):
+                key_path = subkey[5:]  # Enlève "HKLM\"
+                key = winreg.OpenKey(winreg.HKEY_LOCAL_MACHINE, key_path)
+            else:
+                key_path = f"{mount_as}\\{subkey}"
+                key = winreg.OpenKey(winreg.HKEY_USERS, key_path)
+
             for name, entry in values.items():
                 expected_type = reg_type_from_str(entry["type"])
                 expected_value = entry["value"]
@@ -154,26 +166,15 @@ def check_policy(settings, mount_as, log_fn):
                 except FileNotFoundError:
                     log_fn(f"❌ Missing value: {subkey}\\{name}")
                     all_match = False
+
             winreg.CloseKey(key)
+
         except FileNotFoundError:
             log_fn(f"❌ Missing key: {subkey}")
             all_match = False
+
     return all_match
 
-def remove_policy(settings, mount_as, log_fn):
-    for subkey, values in settings.items():
-        try:
-            key_path = f"{mount_as}\\{subkey}"
-            key = winreg.OpenKey(winreg.HKEY_USERS, key_path, 0, winreg.KEY_SET_VALUE)
-            for name in values:
-                try:
-                    winreg.DeleteValue(key, name)
-                    log_fn(f"✔ Removed: {key_path}\\{name}")
-                except FileNotFoundError:
-                    log_fn(f"⚠ Not found (already removed): {key_path}\\{name}")
-            winreg.CloseKey(key)
-        except FileNotFoundError:
-            log_fn(f"⚠ Key not found: {key_path}")
 
 class LGPOGui(QWidget):
     def __init__(self):
@@ -219,10 +220,6 @@ class LGPOGui(QWidget):
         check_button = QPushButton("Check Policy")
         check_button.clicked.connect(self.on_check_clicked)
         button_layout.addWidget(check_button)
-
-        remove_button = QPushButton("Remove Policy")
-        remove_button.clicked.connect(self.on_remove_clicked)
-        button_layout.addWidget(remove_button)
 
         layout.addLayout(button_layout)
 
@@ -280,34 +277,6 @@ class LGPOGui(QWidget):
                 unload_user_hive(mount_as)
 
             QMessageBox.information(self, "Check Result", "✔ All settings match." if result else "❌ Some settings differ.")
-        except Exception as e:
-            self.log(f"❌ {e}")
-            QMessageBox.critical(self, "Error", str(e))
-
-    def on_remove_clicked(self):
-        self.log_output.clear()
-        username = self.user_combo.currentText()
-        selected_file = self.policy_combo.currentText()
-        if not selected_file:
-            QMessageBox.warning(self, "Missing Policy", "No policy file selected.")
-            return
-        file_path = os.path.join(self.policy_dir, selected_file)
-        try:
-            sid = get_user_sid(username)
-            hive_loaded = is_hive_loaded(sid)
-            mount_as = sid if hive_loaded else "TempHive"
-            if not hive_loaded:
-                load_user_hive(username, sid, mount_as)
-
-            settings = parse_lgpo_txt(file_path)
-            remove_policy(settings, mount_as, self.log)
-
-            if not hive_loaded:
-                unload_user_hive(mount_as)
-
-            subprocess.run(["gpupdate", "/force"], check=True)
-            self.log("✔ gpupdate /force executed")
-            QMessageBox.information(self, "Remove Result", "✔ Policy reverted.")
         except Exception as e:
             self.log(f"❌ {e}")
             QMessageBox.critical(self, "Error", str(e))

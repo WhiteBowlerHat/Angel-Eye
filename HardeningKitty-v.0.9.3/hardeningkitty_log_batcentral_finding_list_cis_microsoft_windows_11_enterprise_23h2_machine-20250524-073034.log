@@ -1,0 +1,663 @@
+[*] 24/05/2025 07:30:34 - Starting HardeningKitty
+[*] 24/05/2025 07:30:34 - Getting machine information
+[*] Hostname: BATCENTRAL
+[*] Domain: WORKGROUP
+[*] Domain role: StandaloneWorkstation
+[*] Install date: 04/03/2025 03:13:45
+[*] Last Boot Time: 05/23/2025 15:25:10
+[*] Uptime: 16:05:23.9422793
+[*] Windows: Microsoft Windows 11 Professionnel
+[*] Windows edition: Professional
+[*] Windows version: 2009
+[*] Windows build: 26100.1.amd64fre.ge_release.240331-1435
+[*] System-locale: fr-FR
+[*] Powershell Version: 5.1
+[*] 24/05/2025 07:30:37 - Language warning
+[?] 24/05/2025 07:30:37 - HardeningKitty was developed for the system language 'en-US'. This system uses 'fr-FR' Language-dependent analyses can sometimes produce false results. Please create an issue if this occurs.
+[*] 24/05/2025 07:30:37 - Getting user information
+[*] Username: BATCENTRAL\theim
+[*] Is Admin: True
+[*] 24/05/2025 07:30:37 - Starting Category Account Policies
+ID 1.1.1, Length of password history maintained, Result=Aucune, Recommended=24, Severity=Low
+ID 1.1.2, Maximum password age, Result=42, Recommended=365, Severity=Passed
+ID 1.1.3, Minimum password age, Result=0, Recommended=1, Severity=Low
+ID 1.1.4, Minimum password length, Result=0, Recommended=14, Severity=Medium
+ID 1.1.5, Password must meet complexity requirements, Result=0, Recommended=1, Severity=Medium
+ID 1.1.6, Relax minimum password length limits, Result=-NODATA-, Recommended=1, Severity=Medium
+ID 1.1.7, Store passwords using reversible encryption, Result=0, Recommended=0, Severity=Passed
+ID 1.2.1, Account lockout duration, Result=10, Recommended=15, Severity=Low
+ID 1.2.2, Account lockout threshold, Result=10, Recommended=5, Severity=Low
+ID 1.2.3, Allow Administrator account lockout, Result=1, Recommended=1, Severity=Passed
+ID 1.2.4, Reset account lockout counter, Result=10, Recommended=15, Severity=Low
+[*] 24/05/2025 07:30:37 - Starting Category User Rights Assignment
+ID 2.2.1, Access Credential Manager as a trusted caller, Result=, Recommended=, Severity=Passed
+ID 2.2.2, Access this computer from the network, Result=Tout le monde;BUILTIN\Administrateurs;BUILTIN\Utilisateurs;BUILTIN\Opérateurs de sauvegarde, Recommended=BUILTIN\Remote Desktop Users;BUILTIN\Administrators, Severity=Medium
+ID 2.2.3, Act as part of the operating system, Result=, Recommended=, Severity=Passed
+ID 2.2.4, Adjust memory quotas for a process, Result=AUTORITE NT\SERVICE LOCAL;AUTORITE NT\SERVICE RÉSEAU;BUILTIN\Administrateurs, Recommended=BUILTIN\Administrators;NT AUTHORITY\NETWORK SERVICE;NT AUTHORITY\LOCAL SERVICE, Severity=Passed
+ID 2.2.5, Allow log on locally, Result=Invité;BUILTIN\Administrateurs;BUILTIN\Utilisateurs;BUILTIN\Opérateurs de sauvegarde, Recommended=BUILTIN\Users;BUILTIN\Administrators, Severity=Medium
+ID 2.2.6, Allow log on through Remote Desktop Services, Result=BUILTIN\Administrateurs;BUILTIN\Utilisateurs du Bureau à distance, Recommended=BUILTIN\Remote Desktop Users;BUILTIN\Administrators, Severity=Passed
+ID 2.2.7, Back up files and directories, Result=BUILTIN\Administrateurs;BUILTIN\Opérateurs de sauvegarde, Recommended=BUILTIN\Administrators, Severity=Medium
+ID 2.2.8, Change the system time, Result=AUTORITE NT\SERVICE LOCAL;BUILTIN\Administrateurs, Recommended=BUILTIN\Administrators;NT AUTHORITY\LOCAL SERVICE, Severity=Passed
+ID 2.2.9, Change the time zone, Result=AUTORITE NT\SERVICE LOCAL;BUILTIN\Administrateurs;BUILTIN\Utilisateurs, Recommended=BUILTIN\Users;BUILTIN\Administrators;NT AUTHORITY\LOCAL SERVICE, Severity=Passed
+ID 2.2.10, Create a pagefile, Result=BUILTIN\Administrateurs, Recommended=BUILTIN\Administrators, Severity=Passed
+ID 2.2.11, Create a token object, Result=, Recommended=, Severity=Passed
+ID 2.2.12, Create global objects, Result=AUTORITE NT\SERVICE LOCAL;AUTORITE NT\SERVICE RÉSEAU;BUILTIN\Administrateurs;AUTORITE NT\SERVICE, Recommended=NT AUTHORITY\SERVICE;BUILTIN\Administrators;NT AUTHORITY\NETWORK SERVICE;NT AUTHORITY\LOCAL SERVICE, Severity=Passed
+ID 2.2.13, Create permanent shared objects, Result=, Recommended=, Severity=Passed
+ID 2.2.14.1, Create symbolic links, Result=BUILTIN\Administrateurs;NT VIRTUAL MACHINE\Virtual Machines, Recommended=BUILTIN\Administrators, Severity=Medium
+ID 2.2.14.2, Create symbolic links (Hyper-V), Result=BUILTIN\Administrateurs;NT VIRTUAL MACHINE\Virtual Machines, Recommended=NT VIRTUAL MACHINE\Virtual Machines;BUILTIN\Administrators, Severity=Passed
+ID 2.2.15, Debug programs, Result=BUILTIN\Administrateurs, Recommended=BUILTIN\Administrators, Severity=Passed
+ID 2.2.16, Deny access to this computer from the network, Result=Invité, Recommended=BUILTIN\Guests;NT AUTHORITY\Local account, Severity=Medium
+ID 2.2.17, Deny log on as a batch job, Result=, Recommended=BUILTIN\Guests, Severity=Medium
+ID 2.2.18, Deny log on as a service, Result=, Recommended=BUILTIN\Guests, Severity=Medium
+ID 2.2.19, Deny log on locally, Result=Invité, Recommended=BUILTIN\Guests, Severity=Medium
+ID 2.2.20, Deny log on through Remote Desktop Services, Result=, Recommended=BUILTIN\Guests;NT AUTHORITY\Local account, Severity=Medium
+ID 2.2.21, Enable computer and user accounts to be trusted for delegation, Result=, Recommended=, Severity=Passed
+ID 2.2.22, Force shutdown from a remote system, Result=BUILTIN\Administrateurs, Recommended=BUILTIN\Administrators, Severity=Passed
+ID 2.2.23, Generate security audits, Result=AUTORITE NT\SERVICE LOCAL;AUTORITE NT\SERVICE RÉSEAU;RESTRICTED SERVICES\PrintSpoolerService, Recommended=NT AUTHORITY\NETWORK SERVICE;NT AUTHORITY\LOCAL SERVICE, Severity=Medium
+ID 2.2.24, Impersonate a client after authentication, Result=AUTORITE NT\SERVICE LOCAL;AUTORITE NT\SERVICE RÉSEAU;BUILTIN\Administrateurs;AUTORITE NT\SERVICE;RESTRICTED SERVICES\PrintSpoolerService, Recommended=NT AUTHORITY\SERVICE;BUILTIN\Administrators;NT AUTHORITY\NETWORK SERVICE;NT AUTHORITY\LOCAL SERVICE, Severity=Medium
+ID 2.2.25, Increase scheduling priority, Result=BUILTIN\Administrateurs;Window Manager\Window Manager Group, Recommended=Window Manager\Window Manager Group;BUILTIN\Administrators, Severity=Passed
+ID 2.2.26, Load and unload device drivers, Result=BUILTIN\Administrateurs, Recommended=BUILTIN\Administrators, Severity=Passed
+ID 2.2.27, Lock pages in memory, Result=, Recommended=, Severity=Passed
+ID 2.2.28, Log on as a batch job, Result=BUILTIN\Administrateurs;BUILTIN\Opérateurs de sauvegarde;BUILTIN\Utilisateurs du journal de performances, Recommended=BUILTIN\Administrators, Severity=Medium
+ID 2.2.29.1, Log on as a service, Result=NT SERVICE\ALL SERVICES;NT VIRTUAL MACHINE\Virtual Machines;SERVICES RESTREINTS\TOUS LES SERVICES RESTREINTS, Recommended=, Severity=Medium
+ID 2.2.29.2, Log on as a service (Hyper-V), Result=NT SERVICE\ALL SERVICES;NT VIRTUAL MACHINE\Virtual Machines;SERVICES RESTREINTS\TOUS LES SERVICES RESTREINTS, Recommended=NT VIRTUAL MACHINE\Virtual Machines, Severity=Medium
+ID 2.2.29.3, Log on as a service (Windows Defender Application Guard), Result=NT SERVICE\ALL SERVICES;NT VIRTUAL MACHINE\Virtual Machines;SERVICES RESTREINTS\TOUS LES SERVICES RESTREINTS, Recommended=WDAGUtilityAccount, Severity=Medium
+ID 2.2.30, Manage auditing and security log, Result=BUILTIN\Administrateurs, Recommended=BUILTIN\Administrators, Severity=Passed
+ID 2.2.31, Modify an object label, Result=, Recommended=, Severity=Passed
+ID 2.2.32, Modify firmware environment values, Result=BUILTIN\Administrateurs, Recommended=BUILTIN\Administrators, Severity=Passed
+ID 2.2.33, Perform volume maintenance tasks, Result=BUILTIN\Administrateurs, Recommended=BUILTIN\Administrators, Severity=Passed
+ID 2.2.34, Profile single process, Result=BUILTIN\Administrateurs, Recommended=BUILTIN\Administrators, Severity=Passed
+ID 2.2.35, Profile system performance, Result=BUILTIN\Administrateurs;NT SERVICE\WdiServiceHost, Recommended=NT SERVICE\WdiServiceHost;BUILTIN\Administrators, Severity=Passed
+ID 2.2.36, Replace a process level token, Result=AUTORITE NT\SERVICE LOCAL;AUTORITE NT\SERVICE RÉSEAU, Recommended=NT AUTHORITY\NETWORK SERVICE;NT AUTHORITY\LOCAL SERVICE, Severity=Passed
+ID 2.2.37, Restore files and directories, Result=BUILTIN\Administrateurs;BUILTIN\Opérateurs de sauvegarde, Recommended=BUILTIN\Administrators, Severity=Medium
+ID 2.2.38, Shut down the system, Result=BUILTIN\Administrateurs;BUILTIN\Utilisateurs;BUILTIN\Opérateurs de sauvegarde, Recommended=BUILTIN\Users;BUILTIN\Administrators, Severity=Medium
+ID 2.2.39, Take ownership of files or other objects, Result=BUILTIN\Administrateurs, Recommended=BUILTIN\Administrators, Severity=Passed
+[*] 24/05/2025 07:30:39 - Starting Category Security Options
+ID 2.3.1.1, Accounts: Block Microsoft accounts, Result=-NODATA-, Recommended=3, Severity=Low
+ID 2.3.1.2, Accounts: Guest account status, Result=False, Recommended=False, Severity=Passed
+ID 2.3.1.3, Accounts: Limit local account use of blank passwords to console logon only, Result=1, Recommended=1, Severity=Passed
+ID 2.3.1.4, Accounts: Rename administrator account, Result=Administrateur, Recommended=Administrator, Severity=Passed
+ID 2.3.1.5, Accounts: Rename guest account, Result=Invité, Recommended=Guest, Severity=Passed
+ID 2.3.2.1, Audit: Force audit policy subcategory settings to override audit policy category settings, Result=-NODATA-, Recommended=1, Severity=Low
+ID 2.3.2.2, Audit: Shut down system immediately if unable to log security audits, Result=0, Recommended=0, Severity=Passed
+ID 2.3.4.1, Devices: Prevent users from installing printer drivers, Result=0, Recommended=1, Severity=Medium
+ID 2.3.6.1, Domain member: Digitally encrypt or sign secure channel data (always), Result=1, Recommended=1, Severity=Passed
+ID 2.3.6.2, Domain member: Digitally encrypt secure channel data (when possible), Result=1, Recommended=1, Severity=Passed
+ID 2.3.6.3, Domain member: Digitally sign secure channel data (when possible), Result=1, Recommended=1, Severity=Passed
+ID 2.3.6.4, Domain member: Disable machine account password changes, Result=0, Recommended=0, Severity=Passed
+ID 2.3.6.5, Domain member: Maximum machine account password age, Result=30, Recommended=30, Severity=Passed
+ID 2.3.6.6, Domain member: Require strong (Windows 2000 or later) session key, Result=1, Recommended=1, Severity=Passed
+ID 2.3.7.1, Interactive logon: Do not require CTRL+ALT+DEL, Result=-NODATA-, Recommended=0, Severity=Low
+ID 2.3.7.2, Interactive logon: Don't display last signed-in, Result=0, Recommended=1, Severity=Low
+ID 2.3.7.3, Interactive logon: Machine account lockout threshold, Result=-NODATA-, Recommended=10, Severity=Medium
+ID 2.3.7.4, Interactive logon: Machine inactivity limit, Result=-NODATA-, Recommended=900, Severity=Medium
+ID 2.3.7.5, Interactive logon: Message text for users attempting to log on, Result= , Recommended=Not , Severity=Low
+ID 2.3.7.6, Interactive logon: Message title for users attempting to log on, Result=, Recommended=Not , Severity=Low
+ID 2.3.7.7, Interactive logon: Number of previous logons to cache (in case domain controller is not available), Result=10, Recommended=4, Severity=Medium
+ID 2.3.7.8.1, Interactive logon: Prompt user to change password before expiration (Max), Result=-NODATA-, Recommended=14, Severity=Low
+ID 2.3.7.8.2, Interactive logon: Prompt user to change password before expiration (Min), Result=-NODATA-, Recommended=5, Severity=Low
+ID 2.3.7.9, Interactive logon: Smart card removal behavior, Result=0, Recommended=1, Severity=Low
+ID 2.3.8.1, Microsoft network client: Digitally sign communications (always), Result=0, Recommended=1, Severity=Medium
+ID 2.3.8.2, Microsoft network client: Digitally sign communications (if server agrees), Result=1, Recommended=1, Severity=Passed
+ID 2.3.8.3, Microsoft network client: Send unencrypted password to third-party SMB servers, Result=0, Recommended=0, Severity=Passed
+ID 2.3.9.1, Microsoft network server: Amount of idle time required before suspending session, Result=-NODATA-, Recommended=15, Severity=Medium
+ID 2.3.9.2, Microsoft network server: Digitally sign communications (always), Result=0, Recommended=1, Severity=Medium
+ID 2.3.9.3, Microsoft network server: Digitally sign communications (if client agrees), Result=0, Recommended=1, Severity=Medium
+ID 2.3.9.4, Microsoft network server: Disconnect clients when logon hours expire, Result=1, Recommended=1, Severity=Passed
+ID 2.3.9.5, Microsoft network server: Server SPN target name validation level, Result=-NODATA-, Recommended=1, Severity=Medium
+ID 2.3.10.1, Network access: Allow anonymous SID/Name translation, Result=0, Recommended=0, Severity=Passed
+ID 2.3.10.2, Network access: Do not allow anonymous enumeration of SAM accounts, Result=1, Recommended=1, Severity=Passed
+ID 2.3.10.3, Network access: Do not allow anonymous enumeration of SAM accounts and shares, Result=0, Recommended=1, Severity=Medium
+ID 2.3.10.4, Network access: Do not allow storage of passwords and credentials for network authentication, Result=0, Recommended=1, Severity=Medium
+ID 2.3.10.5, Network access: Let Everyone permissions apply to anonymous users, Result=0, Recommended=0, Severity=Passed
+ID 2.3.10.6, Network access: Named Pipes that can be accessed anonymously, Result=, Recommended=, Severity=Passed
+ID 2.3.10.7, Network access: Remotely accessible registry paths, Result=System\CurrentControlSet\Control\ProductOptions;System\CurrentControlSet\Control\Server Applications;Software\Microsoft\Windows NT\CurrentVersion, Recommended=System\CurrentControlSet\Control\ProductOptions;System\CurrentControlSet\Control\Server Applications;Software\Microsoft\Windows NT\CurrentVersion, Severity=Passed
+ID 2.3.10.8, Network access: Remotely accessible registry paths and sub-paths, Result=System\CurrentControlSet\Control\Print\Printers;System\CurrentControlSet\Services\Eventlog;Software\Microsoft\OLAP Server;Software\Microsoft\Windows NT\CurrentVersion\Print;Software\Microsoft\Windows NT\CurrentVersion\Windows;System\CurrentControlSet\Control\ContentIndex;System\CurrentControlSet\Control\Terminal Server;System\CurrentControlSet\Control\Terminal Server\UserConfig;System\CurrentControlSet\Control\Terminal Server\DefaultUserConfiguration;Software\Microsoft\Windows NT\CurrentVersion\Perflib;System\CurrentControlSet\Services\SysmonLog, Recommended=System\CurrentControlSet\Control\Print\Printers;System\CurrentControlSet\Services\Eventlog;Software\Microsoft\OLAP Server;Software\Microsoft\Windows NT\CurrentVersion\Print;Software\Microsoft\Windows NT\CurrentVersion\Windows;System\CurrentControlSet\Control\ContentIndex;System\CurrentControlSet\Control\Terminal Server;System\CurrentControlSet\Control\Terminal Server\UserConfig;System\CurrentControlSet\Control\Terminal Server\DefaultUserConfiguration;Software\Microsoft\Windows NT\CurrentVersion\Perflib;System\CurrentControlSet\Services\SysmonLog, Severity=Passed
+ID 2.3.10.9, Network access: Restrict anonymous access to Named Pipes and Shares, Result=1, Recommended=1, Severity=Passed
+ID 2.3.10.10, Network access: Restrict clients allowed to make remote calls to SAM, Result=-NODATA-, Recommended=O:BAG:BAD:(A;;RC;;;BA), Severity=Medium
+ID 2.3.10.11, Network access: Shares that can be accessed anonymously, Result=-NODATA-, Recommended=, Severity=Medium
+ID 2.3.10.12, Network access: Sharing and security model for local accounts, Result=0, Recommended=0, Severity=Passed
+ID 2.3.11.1, Network security: Allow Local System to use computer identity for NTLM, Result=-NODATA-, Recommended=1, Severity=Medium
+ID 2.3.11.2, Network security: Allow LocalSystem NULL session fallback, Result=-NODATA-, Recommended=0, Severity=Medium
+ID 2.3.11.3, Network security: Allow PKU2U authentication requests to this computer to use online identities, Result=-NODATA-, Recommended=0, Severity=Medium
+ID 2.3.11.4, Network security: Configure encryption types allowed for Kerberos, Result=-NODATA-, Recommended=2147483640, Severity=Medium
+ID 2.3.11.5, Network security: Do not store LAN Manager hash value on next password change, Result=1, Recommended=1, Severity=Passed
+ID 2.3.11.6, Network security: Force logoff when logon hours expires, Result=0, Recommended=1, Severity=Low
+ID 2.3.11.7, Network security: LAN Manager authentication level, Result=-NODATA-, Recommended=5, Severity=Medium
+ID 2.3.11.8, Network security: LDAP client signing requirements, Result=1, Recommended=1, Severity=Passed
+ID 2.3.11.9, Network security: Minimum session security for NTLM SSP based (including secure RPC) clients, Result=536870912, Recommended=537395200, Severity=Medium
+ID 2.3.11.10, Network security: Minimum session security for NTLM SSP based (including secure RPC) servers, Result=536870912, Recommended=537395200, Severity=Medium
+ID 2.3.11.11, Network security: Restrict NTLM: Audit Incoming NTLM Traffic, Result=-NODATA-, Recommended=2, Severity=Medium
+ID 2.3.11.12, Network security: Restrict NTLM: Outgoing NTLM traffic to remote servers, Result=-NODATA-, Recommended=1, Severity=Medium
+ID 2.3.14.1, System cryptography: Force strong key protection for user keys stored on the computer, Result=-NODATA-, Recommended=1, Severity=Medium
+ID 2.3.15.1, System objects: Require case insensitivity for non-Windows subsystem, Result=1, Recommended=1, Severity=Passed
+ID 2.3.15.2, System objects: Strengthen default permissions of internal system objects (e.g. Symbolic Links), Result=1, Recommended=1, Severity=Passed
+ID 2.3.17.1, User Account Control: Admin Approval Mode for the Built-in Administrator account, Result=-NODATA-, Recommended=1, Severity=Medium
+ID 2.3.17.2, User Account Control: Behavior of the elevation prompt for administrators in Admin Approval Mode, Result=5, Recommended=2, Severity=Medium
+ID 2.3.17.3, User Account Control: Behavior of the elevation prompt for standard users, Result=3, Recommended=0, Severity=Medium
+ID 2.3.17.4, User Account Control: Detect application installations and prompt for elevation, Result=1, Recommended=1, Severity=Passed
+ID 2.3.17.5, User Account Control: Only elevate UIAccess applications that are installed in secure locations, Result=1, Recommended=1, Severity=Passed
+ID 2.3.17.6, User Account Control: Run all administrators in Admin Approval Mode, Result=1, Recommended=1, Severity=Passed
+ID 2.3.17.7, User Account Control: Switch to the secure desktop when prompting for elevation, Result=1, Recommended=1, Severity=Passed
+ID 2.3.17.8, User Account Control: Virtualize file and registry write failures to per-user locations, Result=1, Recommended=1, Severity=Passed
+[*] 24/05/2025 07:30:39 - Starting Category System Services
+ID 5.1.1, Bluetooth Audio Gateway Service (BTAGService), Result=3, Recommended=4, Severity=Medium
+ID 5.1.2, Bluetooth Audio Gateway Service (BTAGService) (Service Startup type), Result=Manual, Recommended=Disabled, Severity=Medium
+ID 5.2.1, Bluetooth Support Service (bthserv), Result=3, Recommended=4, Severity=Medium
+ID 5.2.2, Bluetooth Support Service (bthserv) (Service Startup type), Result=Manual, Recommended=Disabled, Severity=Medium
+ID 5.3.1, Computer Browser (Browser), Result=-NODATA-, Recommended=4, Severity=Medium
+ID 5.3.2, Computer Browser (Browser) (Service Startup type) (!Check for false positive for service "bowser"!), Result=, Recommended=Disabled, Severity=Passed
+ID 5.4.1, Downloaded Maps Manager (MapsBroker), Result=2, Recommended=4, Severity=Medium
+ID 5.4.2, Downloaded Maps Manager (MapsBroker) (Service Startup type), Result=Automatic, Recommended=Disabled, Severity=Medium
+ID 5.5.1, Geolocation Service (lfsvc), Result=3, Recommended=4, Severity=Medium
+ID 5.5.2, Geolocation Service (lfsvc) (Service Startup type), Result=Manual, Recommended=Disabled, Severity=Medium
+ID 5.6.1, IIS Admin Service (IISADMIN), Result=-NODATA-, Recommended=4, Severity=Medium
+ID 5.6.2, IIS Admin Service (IISADMIN) (Service Startup type), Result=, Recommended=Disabled, Severity=Passed
+ID 5.7.1, Infrared monitor service (irmon), Result=-NODATA-, Recommended=4, Severity=Medium
+ID 5.7.2, Infrared monitor service (irmon) (Service Startup type), Result=, Recommended=Disabled, Severity=Medium
+ID 5.8.1, Link-Layer Topology Discovery Mapper (lltdsvc), Result=3, Recommended=4, Severity=Medium
+ID 5.8.2, Link-Layer Topology Discovery Mapper (lltdsvc) (Service Startup type), Result=Manual, Recommended=Disabled, Severity=Medium
+ID 5.9.1, LxssManager (LxssManager), Result=-NODATA-, Recommended=4, Severity=Medium
+ID 5.9.2, LxssManager (LxssManager) (Service Startup type), Result=, Recommended=Disabled, Severity=Passed
+ID 5.10.1, Microsoft FTP Service (FTPSVC), Result=-NODATA-, Recommended=4, Severity=Medium
+ID 5.10.2, Microsoft FTP Service (FTPSVC) (Service Startup type), Result=, Recommended=Disabled, Severity=Passed
+ID 5.11.1, Microsoft iSCSI Initiator Service (MSiSCSI), Result=3, Recommended=4, Severity=Medium
+ID 5.11.2, Microsoft iSCSI Initiator Service (MsiSCSI) (Service Startup type), Result=Manual, Recommended=Disabled, Severity=Medium
+ID 5.12.1, OpenSSH SSH Server (sshd), Result=-NODATA-, Recommended=4, Severity=Medium
+ID 5.12.2, OpenSSH SSH Server (sshd) (Service Startup type), Result=, Recommended=Disabled, Severity=Passed
+ID 5.13.1, Peer Name Resolution Protocol (PNRPsvc), Result=-NODATA-, Recommended=4, Severity=Medium
+ID 5.13.2, Peer Name Resolution Protocol (PNRPsvc) (Service Startup type), Result=, Recommended=Disabled, Severity=Medium
+ID 5.14.1, Peer Networking Grouping (p2psvc), Result=-NODATA-, Recommended=4, Severity=Medium
+ID 5.14.2, Peer Networking Grouping (p2psvc) (Service Startup type), Result=, Recommended=Disabled, Severity=Medium
+ID 5.15.1, Peer Networking Identity Manager (p2pimsvc), Result=-NODATA-, Recommended=4, Severity=Medium
+ID 5.15.2, Peer Networking Identity Manager (p2pimsvc) (Service Startup type), Result=, Recommended=Disabled, Severity=Medium
+ID 5.16.1, PNRP Machine Name Publication Service (PNRPAutoReg), Result=-NODATA-, Recommended=4, Severity=Medium
+ID 5.16.2, PNRP Machine Name Publication Service (PNRPAutoReg) (Service Startup type), Result=, Recommended=Disabled, Severity=Medium
+ID 5.17.1, Print Spooler (Spooler), Result=2, Recommended=4, Severity=Medium
+ID 5.17.2, Print Spooler (Spooler) (Service Startup type), Result=Automatic, Recommended=Disabled, Severity=Medium
+ID 5.18.1, Problem Reports and Solutions Control Panel Support (wercplsupport), Result=3, Recommended=4, Severity=Medium
+ID 5.18.2, Problem Reports and Solutions Control Panel Support (wercplsupport) (Service Startup type), Result=Manual, Recommended=Disabled, Severity=Medium
+ID 5.19.1, Remote Access Auto Connection Manager (RasAuto), Result=3, Recommended=4, Severity=Medium
+ID 5.19.2, Remote Access Auto Connection Manager (RasAuto) (Service Startup type), Result=Manual, Recommended=Disabled, Severity=Medium
+ID 5.20.1, Remote Desktop Configuration (SessionEnv), Result=3, Recommended=4, Severity=Medium
+ID 5.20.2, Remote Desktop Configuration (SessionEnv) (Service Startup type), Result=Manual, Recommended=Disabled, Severity=Medium
+ID 5.21.1, Remote Desktop Services (TermService), Result=3, Recommended=4, Severity=Medium
+ID 5.21.2, Remote Desktop Services (TermService) (Service Startup type), Result=Manual, Recommended=Disabled, Severity=Medium
+ID 5.22.1, Remote Desktop Services UserMode Port Redirector (UmRdpService), Result=3, Recommended=4, Severity=Medium
+ID 5.22.2, Remote Desktop Services UserMode Port Redirector (UmRdpService) (Service Startup type), Result=Manual, Recommended=Disabled, Severity=Medium
+ID 5.23.1, Remote Procedure Call (RPC) Locator (RpcLocator), Result=3, Recommended=4, Severity=Medium
+ID 5.23.2, Remote Procedure Call (RPC) Locator (RpcLocator) (Service Startup type), Result=Manual, Recommended=Disabled, Severity=Medium
+ID 5.24.1, Remote Registry (RemoteRegistry), Result=4, Recommended=4, Severity=Passed
+ID 5.24.2, Remote Registry (RemoteRegistry) (Service Startup type), Result=Disabled, Recommended=Disabled, Severity=Passed
+ID 5.25.1, Routing and Remote Access (RemoteAccess), Result=4, Recommended=4, Severity=Passed
+ID 5.25.2, Routing and Remote Access (RemoteAccess) (Service Startup type), Result=Disabled, Recommended=Disabled, Severity=Passed
+ID 5.26.1, Server (LanmanServer), Result=2, Recommended=4, Severity=Medium
+ID 5.26.2, Server (LanmanServer) (Service Startup type), Result=Automatic, Recommended=Disabled, Severity=Medium
+ID 5.27.1, Simple TCP/IP Services (simptcp), Result=-NODATA-, Recommended=4, Severity=Medium
+ID 5.27.2, Simple TCP/IP Services (simptcp) (Service Startup type), Result=, Recommended=Disabled, Severity=Passed
+ID 5.28.1, SNMP Service (SNMP), Result=-NODATA-, Recommended=4, Severity=Medium
+ID 5.28.2, SNMP Service (SNMP) (Service Startup type), Result=, Recommended=Disabled, Severity=Passed
+ID 5.29.1, Special Administration Console Helper (sacsvr), Result=-NODATA-, Recommended=4, Severity=Medium
+ID 5.29.2, Special Administration Console Helper (sacsvr) (Service Startup type), Result=, Recommended=Disabled, Severity=Medium
+ID 5.30.1, SSDP Discovery (SSDPSRV), Result=3, Recommended=4, Severity=Medium
+ID 5.30.2, SSDP Discovery (SSDPSRV) (Service Startup type), Result=Manual, Recommended=Disabled, Severity=Medium
+ID 5.31.1, UPnP Device Host (upnphost), Result=3, Recommended=4, Severity=Medium
+ID 5.31.2, UPnP Device Host (upnphost) (Service Startup type), Result=Manual, Recommended=Disabled, Severity=Medium
+ID 5.32.1, Web Management Service (WMSvc), Result=-NODATA-, Recommended=4, Severity=Medium
+ID 5.32.2, Web Management Service (WMSvc) (Service Startup type), Result=, Recommended=Disabled, Severity=Passed
+ID 5.33.1, Windows Error Reporting Service (WerSvc), Result=3, Recommended=4, Severity=Medium
+ID 5.33.2, Windows Error Reporting Service (WerSvc) (Service Startup type), Result=Manual, Recommended=Disabled, Severity=Medium
+ID 5.34.1, Windows Event Collector (Wecsvc), Result=3, Recommended=4, Severity=Medium
+ID 5.34.2, Windows Event Collector (Wecsvc) (Service Startup type), Result=Manual, Recommended=Disabled, Severity=Medium
+ID 5.35.1, Windows Media Player Network Sharing Service (WMPNetworkSvc), Result=3, Recommended=4, Severity=Medium
+ID 5.35.2, Windows Media Player Network Sharing Service (WMPNetworkSvc) (Service Startup type), Result=Manual, Recommended=Disabled, Severity=Medium
+ID 5.36.1, Windows Mobile Hotspot Service (icssvc), Result=3, Recommended=4, Severity=Medium
+ID 5.36.2, Windows Mobile Hotspot Service (icssvc) (Service Startup type), Result=Manual, Recommended=Disabled, Severity=Medium
+ID 5.37.1, Windows Push Notifications System Service (WpnService), Result=2, Recommended=4, Severity=Medium
+ID 5.37.2, Windows Push Notifications System Service (WpnService) (Service Startup type), Result=Automatic, Recommended=Disabled, Severity=Medium
+ID 5.38.1, Windows PushToInstall Service (PushToInstall), Result=3, Recommended=4, Severity=Medium
+ID 5.38.2, Windows PushToInstall Service (PushToInstall) (Service Startup type), Result=Manual, Recommended=Disabled, Severity=Medium
+ID 5.39.1, Windows Remote Management (WS-Management) (WinRM), Result=3, Recommended=4, Severity=Medium
+ID 5.39.2, Windows Remote Management (WS-Management) (WinRM) (Service Startup type), Result=Manual, Recommended=Disabled, Severity=Medium
+ID 5.40.1, World Wide Web Publishing Service (W3SVC), Result=-NODATA-, Recommended=4, Severity=Medium
+ID 5.40.2, World Wide Web Publishing Service (W3SVC) (Service Startup type), Result=, Recommended=Disabled, Severity=Passed
+ID 5.41.1, Xbox Accessory Management Service (XboxGipSvc), Result=3, Recommended=4, Severity=Medium
+ID 5.41.2, Xbox Accessory Management Service (XboxGipSvc) (Service Startup type), Result=Manual, Recommended=Disabled, Severity=Medium
+ID 5.42.1, Xbox Live Auth Manager (XblAuthManager), Result=3, Recommended=4, Severity=Medium
+ID 5.42.2, Xbox Live Auth Manager (XblAuthManager) (Service Startup type), Result=Manual, Recommended=Disabled, Severity=Medium
+ID 5.43.1, Xbox Live Game Save (XblGameSave), Result=3, Recommended=4, Severity=Medium
+ID 5.43.2, Xbox Live Game Save (XblGameSave) (Service Startup type), Result=Manual, Recommended=Disabled, Severity=Medium
+ID 5.44.1, Xbox Live Networking Service (XboxNetApiSvc), Result=3, Recommended=4, Severity=Medium
+ID 5.44.2, Xbox Live Networking Service (XboxNetApiSvc) (Service Startup type), Result=Manual, Recommended=Disabled, Severity=Medium
+[*] 24/05/2025 07:30:40 - Starting Category Windows Firewall
+ID 9.1.1, EnableFirewall (Domain Profile, Policy), Result=-NODATA-, Recommended=1, Severity=Medium
+ID 9.1.2, Inbound Connections (Domain Profile, Policy), Result=-NODATA-, Recommended=1, Severity=Medium
+ID 9.1.3, Display a notification (Domain Profile, Policy), Result=-NODATA-, Recommended=1, Severity=Low
+ID 9.1.4, Name of log file (Domain Profile, Policy), Result=-NODATA-, Recommended=%SystemRoot%\System32\logfiles\firewall\domainfw.log, Severity=Low
+ID 9.1.5, Log size limit (Domain Profile, Policy), Result=-NODATA-, Recommended=16384, Severity=Medium
+ID 9.1.6, Log dropped packets (Domain Profile, Policy), Result=-NODATA-, Recommended=1, Severity=Medium
+ID 9.1.7, Log successful connections (Domain Profile, Policy), Result=-NODATA-, Recommended=1, Severity=Low
+ID 9.2.1, EnableFirewall (Private Profile, Policy), Result=-NODATA-, Recommended=1, Severity=Medium
+ID 9.2.2, Inbound Connections (Private Profile, Policy), Result=-NODATA-, Recommended=1, Severity=Medium
+ID 9.2.3, Display a notification (Private Profile, Policy), Result=-NODATA-, Recommended=1, Severity=Low
+ID 9.2.4, Name of log file (Private Profile, Policy), Result=-NODATA-, Recommended=%SystemRoot%\System32\logfiles\firewall\privatefw.log, Severity=Low
+ID 9.2.5, Log size limit (Private Profile, Policy), Result=-NODATA-, Recommended=16384, Severity=Medium
+ID 9.2.6, Log dropped packets (Private Profile, Policy), Result=-NODATA-, Recommended=1, Severity=Medium
+ID 9.2.7, Log successful connections (Private Profile, Policy), Result=-NODATA-, Recommended=1, Severity=Low
+ID 9.3.1, EnableFirewall (Public Profile, Policy), Result=-NODATA-, Recommended=1, Severity=Medium
+ID 9.3.2, Inbound Connections (Public Profile, Policy), Result=-NODATA-, Recommended=1, Severity=Medium
+ID 9.3.3, Display a notification (Public Profile, Policy), Result=-NODATA-, Recommended=1, Severity=Low
+ID 9.3.4, Apply local firewall rules (Public Profile, Policy), Result=-NODATA-, Recommended=0, Severity=Low
+ID 9.3.5, Apply local connection security rules (Public Profile, Policy), Result=-NODATA-, Recommended=0, Severity=Low
+ID 9.3.6, Name of log file (Public Profile, Policy), Result=-NODATA-, Recommended=%SystemRoot%\System32\logfiles\firewall\publicfw.log, Severity=Low
+ID 9.3.7, Log size limit (Public Profile, Policy), Result=-NODATA-, Recommended=16384, Severity=Medium
+ID 9.3.8, Log dropped packets (Public Profile, Policy), Result=-NODATA-, Recommended=1, Severity=Medium
+ID 9.3.9, Log successful connections (Public Profile, Policy), Result=-NODATA-, Recommended=1, Severity=Low
+[*] 24/05/2025 07:30:40 - Starting Category Advanced Audit Policy Configuration
+ID 17.1.1, Credential Validation, Result=No Auditing, Recommended=Success and Failure, Severity=Low
+ID 17.2.1, Application Group Management, Result=No Auditing, Recommended=Success and Failure, Severity=Low
+ID 17.2.2, Security Group Management, Result=Success, Recommended=Success, Severity=Passed
+ID 17.2.3, User Account Management, Result=Success, Recommended=Success and Failure, Severity=Low
+ID 17.3.1, Plug and Play Events, Result=No Auditing, Recommended=Success, Severity=Low
+ID 17.3.2, Process Creation, Result=No Auditing, Recommended=Success, Severity=Low
+ID 17.5.1, Account Lockout, Result=Success, Recommended=Failure, Severity=Low
+ID 17.5.2, Group Membership, Result=No Auditing, Recommended=Success, Severity=Low
+ID 17.5.3, Logoff, Result=Success, Recommended=Success, Severity=Passed
+ID 17.5.4, Logon, Result=Success and Failure, Recommended=Success and Failure, Severity=Passed
+ID 17.5.5, Other Logon/Logoff Events, Result=No Auditing, Recommended=Success and Failure, Severity=Low
+ID 17.5.6, Special Logon, Result=Success, Recommended=Success, Severity=Passed
+ID 17.6.1, Detailed File Share, Result=No Auditing, Recommended=Failure, Severity=Low
+ID 17.6.2, File Share, Result=No Auditing, Recommended=Success and Failure, Severity=Low
+ID 17.6.3, Other Object Access Events, Result=No Auditing, Recommended=Success and Failure, Severity=Low
+ID 17.6.4, Removable Storage, Result=No Auditing, Recommended=Success and Failure, Severity=Low
+ID 17.7.1, Audit Policy Change, Result=Success, Recommended=Success, Severity=Passed
+ID 17.7.2, Authentication Policy Change, Result=Success, Recommended=Success, Severity=Passed
+ID 17.7.3, Authorization Policy Change, Result=No Auditing, Recommended=Success, Severity=Low
+ID 17.7.4, MPSSVC Rule-Level Policy Change, Result=No Auditing, Recommended=Success and Failure, Severity=Low
+ID 17.7.5, Other Policy Change Events, Result=No Auditing, Recommended=Failure, Severity=Low
+ID 17.8.1, Sensitive Privilege Use, Result=No Auditing, Recommended=Success and Failure, Severity=Low
+ID 17.9.1, IPsec Driver, Result=No Auditing, Recommended=Success and Failure, Severity=Low
+ID 17.9.2, Other System Events, Result=Success and Failure, Recommended=Success and Failure, Severity=Passed
+ID 17.9.3, Security State Change, Result=Success, Recommended=Success, Severity=Passed
+ID 17.9.4, Security System Extension, Result=No Auditing, Recommended=Success, Severity=Low
+ID 17.9.5, System Integrity, Result=Success and Failure, Recommended=Success and Failure, Severity=Passed
+[*] 24/05/2025 07:30:40 - Starting Category Administrative Templates: Control Panel
+ID 18.1.1.1, Personalization: Prevent enabling lock screen camera, Result=1, Recommended=1, Severity=Passed
+ID 18.1.1.2, Personalization: Prevent enabling lock screen slide show, Result=-NODATA-, Recommended=1, Severity=Low
+ID 18.1.2.2, Regional and Language Options: Allow users to enable online speech recognition services, Result=-NODATA-, Recommended=0, Severity=Medium
+ID 18.1.3, Allow Online Tips, Result=-NODATA-, Recommended=0, Severity=Medium
+[*] 24/05/2025 07:30:40 - Starting Category MS Security Guide
+ID 18.4.1, Apply UAC restrictions to local accounts on network logons, Result=-NODATA-, Recommended=0, Severity=Medium
+ID 18.4.2, Configure RPC packet level privacy setting for incoming connections, Result=-NODATA-, Recommended=1, Severity=Medium
+ID 18.4.3, Configure SMB v1 client driver, Result=-NODATA-, Recommended=4, Severity=Medium
+ID 18.4.4, Configure SMB v1 server, Result=-NODATA-, Recommended=0, Severity=Medium
+ID 18.4.5, Enable Certificate Padding, Result=-NODATA-, Recommended=1, Severity=Medium
+ID 18.4.6, Enable Structured Exception Handling Overwrite Protection (SEHOP), Result=-NODATA-, Recommended=0, Severity=Medium
+ID 18.4.7, NetBT NodeType configuration, Result=-NODATA-, Recommended=2, Severity=Medium
+ID 18.4.8, WDigest Authentication, Result=-NODATA-, Recommended=0, Severity=High
+[*] 24/05/2025 07:30:40 - Starting Category MSS (Legacy)
+ID 18.5.1, MSS: (AutoAdminLogon) Enable Automatic Logon (not recommended), Result=0, Recommended=0, Severity=Passed
+ID 18.5.2, MSS: (DisableIPSourceRouting IPv6) IP source routing protection level (protects against packet spoofing), Result=-NODATA-, Recommended=2, Severity=Medium
+ID 18.5.3, MSS: (DisableIPSourceRouting) IP source routing protection level (protects against packet spoofing), Result=-NODATA-, Recommended=2, Severity=Medium
+ID 18.5.4, MSS: (DisableSavePassword) Prevent the dial-up password from being saved, Result=-NODATA-, Recommended=1, Severity=Medium
+ID 18.5.5, MSS: (EnableICMPRedirect) Allow ICMP redirects to override OSPF generated routes, Result=-NODATA-, Recommended=0, Severity=Medium
+ID 18.5.6, MSS: (KeepAliveTime) How often keep-alive packets are sent in milliseconds, Result=-NODATA-, Recommended=300000, Severity=Medium
+ID 18.5.7, MSS: (NoNameReleaseOnDemand) Allow the computer to ignore NetBIOS name release requests except from WINS servers, Result=-NODATA-, Recommended=1, Severity=Medium
+ID 18.5.8, MSS: (PerformRouterDiscovery) Allow IRDP to detect and configure Default Gateway addresses (could lead to DoS), Result=-NODATA-, Recommended=0, Severity=Medium
+ID 18.5.9, MSS: (SafeDllSearchMode) Enable Safe DLL search mode (recommended), Result=-NODATA-, Recommended=1, Severity=Medium
+ID 18.5.10, MSS: (ScreenSaverGracePeriod) The time in seconds before the screen saver grace period expires (0 recommended), Result=-NODATA-, Recommended=5, Severity=Medium
+ID 18.5.11, MSS: (TcpMaxDataRetransmissions IPv6) How many times unacknowledged data is retransmitted, Result=-NODATA-, Recommended=3, Severity=Medium
+ID 18.5.12, MSS: (TcpMaxDataRetransmissions) How many times unacknowledged data is retransmitted, Result=-NODATA-, Recommended=3, Severity=Medium
+ID 18.5.13, MSS: (WarningLevel) Percentage threshold for the security event log at which the system will generate a warning, Result=-NODATA-, Recommended=90, Severity=Medium
+[*] 24/05/2025 07:30:41 - Starting Category Administrative Templates: Network
+ID 18.6.4.1, DNS Client: Configure DNS over HTTPS (DoH) name resolution, Result=-NODATA-, Recommended=2, Severity=Medium
+ID 18.6.4.2, DNS Client: Configure NetBIOS settings, Result=-NODATA-, Recommended=2, Severity=Medium
+ID 18.6.4.3, DNS Client: Turn off multicast name resolution (LLMNR), Result=-NODATA-, Recommended=0, Severity=Medium
+ID 18.6.5.1, Fonts: Enable Font Providers, Result=-NODATA-, Recommended=0, Severity=Medium
+ID 18.6.8.1, Lanman Workstation: Enable insecure guest logons, Result=-NODATA-, Recommended=0, Severity=Medium
+ID 18.6.9.1.1, Link-Layer Topology Discovery: Turn on Mapper I/O (LLTDIO) driver (AllowLLTDIOOndomain), Result=-NODATA-, Recommended=0, Severity=Medium
+ID 18.6.9.1.2, Link-Layer Topology Discovery: Turn on Mapper I/O (LLTDIO) driver (AllowLLTDIOOnPublicNet), Result=-NODATA-, Recommended=0, Severity=Medium
+ID 18.6.9.1.3, Link-Layer Topology Discovery: Turn on Mapper I/O (LLTDIO) driver (EnableLLTDIO), Result=-NODATA-, Recommended=0, Severity=Medium
+ID 18.6.9.1.4, Link-Layer Topology Discovery: Turn on Mapper I/O (LLTDIO) driver (ProhibitLLTDIOOnPrivateNet), Result=-NODATA-, Recommended=0, Severity=Medium
+ID 18.6.9.2.1, Turn on Responder (RSPNDR) driver (AllowRspndrOnDomain), Result=-NODATA-, Recommended=0, Severity=Medium
+ID 18.6.9.2.2, Turn on Responder (RSPNDR) driver (AllowRspndrOnPublicNet), Result=-NODATA-, Recommended=0, Severity=Medium
+ID 18.6.9.2.3, Turn on Responder (RSPNDR) driver (EnableRspndr), Result=-NODATA-, Recommended=0, Severity=Medium
+ID 18.6.9.2.4, Turn on Responder (RSPNDR) driver (ProhibitRspndrOnPrivateNet), Result=-NODATA-, Recommended=0, Severity=Medium
+ID 18.6.10.2, Turn off Microsoft Peer-to-Peer Networking Services, Result=0, Recommended=1, Severity=Medium
+ID 18.6.11.2, Network Connections: Prohibit installation and configuration of Network Bridge on your DNS domain network, Result=-NODATA-, Recommended=0, Severity=Medium
+ID 18.6.11.3, Network Connections: Prohibit use of Internet Connection Sharing on your DNS domain network, Result=-NODATA-, Recommended=0, Severity=Medium
+ID 18.6.11.4, Network Connections: Require domain users to elevate when setting a network's location, Result=-NODATA-, Recommended=1, Severity=Medium
+ID 18.6.14.1.1, Network Provider: Hardened UNC Paths (NETLOGON), Result=, Recommended=RequireMutualAuthentication=1,RequireIntegrity=1,RequirePrivacy=1, Severity=Medium
+ID 18.6.14.1.2, Network Provider: Hardened UNC Paths (SYSVOL), Result=, Recommended=RequireMutualAuthentication=1,RequireIntegrity=1,RequirePrivacy=1, Severity=Medium
+ID 18.6.19.2.1, Disable IPv6, Result=-NODATA-, Recommended=255, Severity=Medium
+ID 18.6.20.1.1, Windows Connect Now: Configuration of wireless settings using Windows Connect Now (EnableRegistrars), Result=-NODATA-, Recommended=0, Severity=Medium
+ID 18.6.20.1.2, Windows Connect Now: Configuration of wireless settings using Windows Connect Now (DisableUPnPRegistrar), Result=-NODATA-, Recommended=0, Severity=Medium
+ID 18.6.20.1.3, Windows Connect Now: Configuration of wireless settings using Windows Connect Now (DisableInBand802DOT11Registrar), Result=-NODATA-, Recommended=0, Severity=Medium
+ID 18.6.20.1.4, Windows Connect Now: Configuration of wireless settings using Windows Connect Now (DisableFlashConfigRegistrar), Result=-NODATA-, Recommended=0, Severity=Medium
+ID 18.6.20.1.5, Windows Connect Now: Configuration of wireless settings using Windows Connect Now (DisableWPDRegistrar), Result=-NODATA-, Recommended=0, Severity=Medium
+ID 18.6.20.2, Windows Connect Now: Prohibit access of the Windows Connect Now wizards, Result=-NODATA-, Recommended=1, Severity=Medium
+ID 18.6.21.1, Windows Connection Manager: Minimize the number of simultaneous connections to the Internet or a Windows Domain, Result=-NODATA-, Recommended=3, Severity=Medium
+ID 18.6.21.2, Windows Connection Manager: Prohibit connection to non-domain networks when connected to domain authenticated network, Result=-NODATA-, Recommended=1, Severity=Medium
+ID 18.6.23.2.1, WLAN Settings: Allow Windows to automatically connect to suggested open hotspots, to networks shared by contacts, and to hotspots offering paid services, Result=-NODATA-, Recommended=0, Severity=Medium
+[*] 24/05/2025 07:30:41 - Starting Category Administrative Templates: Printers
+ID 18.7.1, Allow Print Spooler to accept client connections, Result=-NODATA-, Recommended=2, Severity=Medium
+ID 18.7.2, Configure Redirection Guard, Result=-NODATA-, Recommended=1, Severity=Medium
+ID 18.7.3, Configure RPC connection settings (RpcUseNamedPipeProtocol), Result=-NODATA-, Recommended=0, Severity=Medium
+ID 18.7.4, Configure RPC connection settings (RpcAuthentication), Result=-NODATA-, Recommended=0, Severity=Medium
+ID 18.7.5, Configure RPC listener settings (RpcProtocols), Result=-NODATA-, Recommended=5, Severity=Medium
+ID 18.7.6, Configure RPC listener settings (ForceKerberosForRpc), Result=-NODATA-, Recommended=0, Severity=Medium
+ID 18.7.7, Configure RPC over TCP port, Result=-NODATA-, Recommended=0, Severity=Medium
+ID 18.7.8, Limits print driver installation to Administrators, Result=-NODATA-, Recommended=1, Severity=Medium
+ID 18.7.9, Manage processing of Queue-specific files, Result=-NODATA-, Recommended=1, Severity=Medium
+ID 18.7.10, Point and Print Restrictions: When installing drivers for a new connection, Result=-NODATA-, Recommended=0, Severity=Medium
+ID 18.7.11, Point and Print Restrictions: When updating drivers for an existing connection, Result=-NODATA-, Recommended=0, Severity=Medium
+[*] 24/05/2025 07:30:41 - Starting Category Administrative Templates: Start Menu and Taskbar
+ID 18.8.1.1, Notifications: Turn off notifications network usage, Result=-NODATA-, Recommended=1, Severity=Medium
+ID 18.8.2, Remove Personalized Website Recommendations from the Recommended section in the Start Menu, Result=-NODATA-, Recommended=1, Severity=Medium
+[*] 24/05/2025 07:30:41 - Starting Category Administrative Templates: System
+ID 18.9.3.1, Audit Process Creation: Include command line in process creation events, Result=-NODATA-, Recommended=1, Severity=Medium
+ID 18.9.4.1, Credentials Delegation: Encryption Oracle Remediation, Result=-NODATA-, Recommended=0, Severity=Medium
+ID 18.9.4.2, Credentials Delegation: Remote host allows delegation of non-exportable credentials, Result=-NODATA-, Recommended=1, Severity=Medium
+ID 18.9.5.1, Device Guard: Turn On Virtualization Based Security (Policy), Result=-NODATA-, Recommended=1, Severity=Medium
+ID 18.9.5.2, Device Guard: Select Platform Security Level (Policy), Result=-NODATA-, Recommended=3, Severity=Medium
+ID 18.9.5.3, Device Guard: Virtualization Based Protection of Code Integrity (Policy), Result=-NODATA-, Recommended=1, Severity=Medium
+ID 18.9.5.4, Device Guard: Require UEFI Memory Attributes Table (Policy), Result=-NODATA-, Recommended=1, Severity=Medium
+ID 18.9.5.5, Device Guard: Credential Guard Configuration (Policy), Result=-NODATA-, Recommended=1, Severity=Medium
+ID 18.9.5.6, Device Guard: Secure Launch Configuration (Policy), Result=-NODATA-, Recommended=1, Severity=Medium
+ID 18.9.5.7, Device Guard: Kernel-mode Hardware-enforced Stack Protection (Policy), Result=-NODATA-, Recommended=1, Severity=Medium
+ID 18.9.7.1.1, Device Installation: Device Installation Restrictions: Prevent installation of devices that match an ID, Result=-NODATA-, Recommended=1, Severity=Medium
+ID 18.9.7.1.2, Device Installation: Device Installation Restrictions: Prevent installation of devices that match ID PCI\CC_0C0A (Thunderbolt), Result=-NODATA-, Recommended=PCI\CC_0C0A, Severity=Medium
+ID 18.9.7.1.3, Device Installation: Device Installation Restrictions: Prevent installation of devices that match an ID (Retroactive), Result=-NODATA-, Recommended=1, Severity=Medium
+ID 18.9.7.1.4, Device Installation: Device Installation Restrictions: Prevent installation of devices using drivers that match an device setup class, Result=-NODATA-, Recommended=1, Severity=Medium
+ID 18.9.7.1.5.1, Device Installation: Device Installation Restrictions: Prevent installation of devices using drivers that match d48179be-ec20-11d1-b6b8-00c04fa372a7 (SBP-2 drive), Result=-NODATA-, Recommended=d48179be-ec20-11d1-b6b8-00c04fa372a7, Severity=Medium
+ID 18.9.7.1.5.2, Device Installation: Device Installation Restrictions: Prevent installation of devices using drivers that match 7ebefbc0-3200-11d2-b4c2-00a0C9697d07 (SBP-2 drive), Result=-NODATA-, Recommended=7ebefbc0-3200-11d2-b4c2-00a0C9697d07, Severity=Medium
+ID 18.9.7.1.5.3, Device Installation: Device Installation Restrictions: Prevent installation of devices using drivers that match c06ff265-ae09-48f0-812c-16753d7cba83 (SBP-2 drive), Result=-NODATA-, Recommended=c06ff265-ae09-48f0-812c-16753d7cba83, Severity=Medium
+ID 18.9.7.1.5.4, Device Installation: Device Installation Restrictions: Prevent installation of devices using drivers that match 6bdd1fc1-810f-11d0-bec7-08002be2092f (SBP-2 drive), Result=-NODATA-, Recommended=6bdd1fc1-810f-11d0-bec7-08002be2092f, Severity=Medium
+ID 18.9.7.1.6, Device Installation: Device Installation Restrictions: Prevent installation of devices using drivers that match an device setup class (Retroactive), Result=-NODATA-, Recommended=1, Severity=Medium
+ID 18.9.7.2, Device Installation: Device Installation Restrictions: Prevent device metadata retrieval from the Internet, Result=-NODATA-, Recommended=1, Severity=Medium
+ID 18.9.13.1, Early Launch Antimalware: Boot-Start Driver Initialization Policy, Result=-NODATA-, Recommended=3, Severity=Medium
+ID 18.9.19.2, Group Policy: Do not apply during periodic background processing, Result=-NODATA-, Recommended=0, Severity=Medium
+ID 18.9.19.3, Group Policy: Process even if the Group Policy objects have not changed, Result=-NODATA-, Recommended=0, Severity=Medium
+ID 18.9.19.4, Group Policy: Configure security policy processing: Do not apply during periodic background processing, Result=-NODATA-, Recommended=0, Severity=Medium
+ID 18.9.19.5, Group Policy: Configure security policy processing: Process even if the Group Policy objects have not changed, Result=-NODATA-, Recommended=0, Severity=Medium
+ID 18.9.19.6, Group Policy: Continue experiences on this device, Result=-NODATA-, Recommended=0, Severity=Medium
+ID 18.9.19.7, Group Policy: Turn off background refresh of Group Policy, Result=-NODATA-, Recommended=0, Severity=Medium
+ID 18.9.20.1.1, Internet Communication Management: Internet Communication settings: Turn off access to the Store, Result=-NODATA-, Recommended=1, Severity=Medium
+ID 18.9.20.1.2, Internet Communication Management: Internet Communication settings: Turn off downloading of print drivers over HTTP, Result=-NODATA-, Recommended=1, Severity=Medium
+ID 18.9.20.1.3, Internet Communication Management: Internet Communication settings: Turn off handwriting personalization data sharing, Result=1, Recommended=1, Severity=Passed
+ID 18.9.20.1.4, Internet Communication Management: Internet Communication settings: Turn off handwriting recognition error reporting, Result=1, Recommended=1, Severity=Passed
+ID 18.9.20.1.5, Internet Communication Management: Internet Communication settings: Turn off Internet Connection Wizard if URL connection is referring to Microsoft.com, Result=-NODATA-, Recommended=1, Severity=Medium
+ID 18.9.20.1.6, Internet Communication Management: Internet Communication settings: Turn off Internet download for Web publishing and online ordering wizards, Result=-NODATA-, Recommended=1, Severity=Medium
+ID 18.9.20.1.7, Internet Communication Management: Internet Communication settings: Turn off printing over HTTP, Result=-NODATA-, Recommended=1, Severity=Medium
+ID 18.9.20.1.8, Internet Communication Management: Internet Communication settings: Turn off Registration if URL connection is referring to Microsoft.com, Result=-NODATA-, Recommended=1, Severity=Medium
+ID 18.9.20.1.9, Internet Communication Management: Internet Communication settings: Turn off Search Companion content file updates, Result=-NODATA-, Recommended=1, Severity=Medium
+ID 18.9.20.1.10, Internet Communication Management: Internet Communication settings: Turn off the 'Order Prints' picture task, Result=-NODATA-, Recommended=1, Severity=Medium
+ID 18.9.20.1.11, Internet Communication Management: Internet Communication settings: Turn off the 'Publish to Web' task for files and folders, Result=-NODATA-, Recommended=1, Severity=Medium
+ID 18.9.20.1.12, Internet Communication Management: Internet Communication settings: Turn off the Windows Messenger Customer Experience Improvement Program, Result=-NODATA-, Recommended=2, Severity=Medium
+ID 18.9.20.1.13, Internet Communication Management: Internet Communication settings: Turn off Windows Customer Experience Improvement Program, Result=-NODATA-, Recommended=0, Severity=Medium
+ID 18.9.20.1.14.1, Internet Communication Management: Internet Communication settings: Turn off Windows Error Reporting 1, Result=-NODATA-, Recommended=0, Severity=Medium
+ID 18.9.20.1.14.2, Internet Communication Management: Internet Communication settings: Turn off Windows Error Reporting 2, Result=-NODATA-, Recommended=1, Severity=Medium
+ID 18.9.23.1.1, Kerberos: Support device authentication using certificate (DevicePKInitBehavior), Result=-NODATA-, Recommended=0, Severity=Medium
+ID 18.9.23.1.2, Kerberos: Support device authentication using certificate (DevicePKInitEnabled), Result=-NODATA-, Recommended=1, Severity=Medium
+ID 18.9.24.1, Kernel DMA Protection: Enumeration policy for external devices incompatible with Kernel DMA Protection, Result=-NODATA-, Recommended=0, Severity=Medium
+ID 18.9.25.1, LAPS: Configure password backup directory, Result=-NODATA-, Recommended=2, Severity=Medium
+ID 18.9.25.2, LAPS: Do not allow password expiration time longer than required by policy, Result=-NODATA-, Recommended=1, Severity=Medium
+ID 18.9.25.3, LAPS: Enable password encryption, Result=-NODATA-, Recommended=1, Severity=Medium
+ID 18.9.25.4, LAPS: Password Settings: Password Complexity, Result=-NODATA-, Recommended=4, Severity=Medium
+ID 18.9.25.5, LAPS: Password Settings: Password Length, Result=-NODATA-, Recommended=15, Severity=Medium
+ID 18.9.25.6, LAPS: Password Settings: Password Age (Days), Result=-NODATA-, Recommended=30, Severity=Medium
+ID 18.9.25.7, LAPS: Post-authentication actions: Grace period (hours), Result=-NODATA-, Recommended=8, Severity=Medium
+ID 18.9.25.8, LAPS: Post-authentication actions: Actions, Result=-NODATA-, Recommended=3, Severity=Medium
+ID 18.9.26.1, Local Security Authority: Allow Custom SSPs and APs to be loaded into LSASS, Result=-NODATA-, Recommended=0, Severity=Medium
+ID 18.9.26.2, Local Security Authority: Configures LSASS to run as a protected process, Result=0, Recommended=1, Severity=Medium
+ID 18.9.27.1, Locale Services: Disallow copying of user input methods to the system account for sign-in, Result=-NODATA-, Recommended=1, Severity=Medium
+ID 18.9.28.1, Logon: Block user from showing account details on sign-in, Result=-NODATA-, Recommended=1, Severity=Medium
+ID 18.9.28.2, Logon: Do not display network selection UI, Result=-NODATA-, Recommended=1, Severity=Medium
+ID 18.9.28.3, Logon: Do not enumerate connected users on domain-joined computers, Result=-NODATA-, Recommended=1, Severity=Medium
+ID 18.9.28.4, Logon: Enumerate local users on domain-joined computers, Result=-NODATA-, Recommended=0, Severity=Medium
+ID 18.9.28.5, Logon: Turn off app notifications on the lock screen, Result=-NODATA-, Recommended=1, Severity=Medium
+ID 18.9.28.6, Logon: Turn off picture password sign-in, Result=-NODATA-, Recommended=1, Severity=Medium
+ID 18.9.28.7, Logon: Turn on convenience PIN sign-in, Result=-NODATA-, Recommended=0, Severity=Medium
+ID 18.9.31.1, OS Policies: Allow Clipboard synchronization across devices, Result=0, Recommended=0, Severity=Passed
+ID 18.9.31.2, OS Policies: Allow upload of User Activities, Result=0, Recommended=0, Severity=Passed
+ID 18.9.33.6.1, Sleep Settings: Allow network connectivity during connected-standby (on battery), Result=-NODATA-, Recommended=0, Severity=Medium
+ID 18.9.33.6.2, Sleep Settings: Allow network connectivity during connected-standby (plugged in), Result=-NODATA-, Recommended=0, Severity=Medium
+ID 18.9.33.6.3, Sleep Settings: Allow standby states (S1-S3) when sleeping (on battery), Result=-NODATA-, Recommended=0, Severity=Medium
+ID 18.9.33.6.4, Sleep Settings: Allow standby states (S1-S3) when sleeping (plugged in), Result=-NODATA-, Recommended=0, Severity=Medium
+ID 18.9.33.6.5, Sleep Settings: Require a password when a computer wakes (on battery), Result=-NODATA-, Recommended=1, Severity=Medium
+ID 18.9.33.6.6, Sleep Settings: Require a password when a computer wakes (plugged in), Result=-NODATA-, Recommended=1, Severity=Medium
+ID 18.9.35.1, Remote Assistance: Configure Offer Remote Assistance, Result=-NODATA-, Recommended=0, Severity=Medium
+ID 18.9.35.2, Remote Assistance: Configure Solicited Remote Assistance, Result=-NODATA-, Recommended=0, Severity=Medium
+ID 18.9.36.1, Remote Procedure Call: Enable RPC Endpoint Mapper Client Authentication, Result=-NODATA-, Recommended=1, Severity=Medium
+ID 18.9.36.2, Remote Procedure Call: Restrict Unauthenticated RPC clients, Result=-NODATA-, Recommended=1, Severity=Medium
+ID 18.9.47.5.1, Troubleshooting and Diagnostics: Microsoft Support Diagnostic Tool: Turn on MSDT interactive communication with support provider, Result=-NODATA-, Recommended=0, Severity=Medium
+ID 18.9.47.11.1, Windows Performance PerfTrack: Enable/Disable PerfTrack, Result=-NODATA-, Recommended=0, Severity=Medium
+ID 18.9.49.1, User Profiles: Turn off the advertising ID, Result=-NODATA-, Recommended=1, Severity=Medium
+ID 18.9.51.1.1, Time Providers: Enable Windows NTP Client, Result=-NODATA-, Recommended=1, Severity=Medium
+ID 18.9.51.1.2, Time Providers: Enable Windows NTP Server, Result=-NODATA-, Recommended=0, Severity=Medium
+[*] 24/05/2025 07:30:42 - Starting Category Administrative Templates: Windows Components
+ID 18.10.3.1, App Package Deployment: Allow a Windows app to share application data between users, Result=-NODATA-, Recommended=0, Severity=Medium
+ID 18.10.3.2, App Package Deployment: Prevent non-admin users from installing packaged Windows apps, Result=-NODATA-, Recommended=1, Severity=Medium
+ID 18.10.4.1, App Privacy: Let Windows apps activate with voice while the system is locked, Result=-NODATA-, Recommended=2, Severity=Medium
+ID 18.10.5.1, App runtime: Allow Microsoft accounts to be optional, Result=-NODATA-, Recommended=1, Severity=Medium
+ID 18.10.5.2, App runtime: Block launching Universal Windows apps with Windows Runtime API access from hosted content, Result=-NODATA-, Recommended=1, Severity=Medium
+ID 18.10.7.1, AutoPlay Policies: Disallow Autoplay for non-volume devices, Result=-NODATA-, Recommended=1, Severity=Medium
+ID 18.10.7.2, AutoPlay Policies: Set the default behavior for AutoRun, Result=-NODATA-, Recommended=1, Severity=Medium
+ID 18.10.7.3, AutoPlay Policies: Turn off Autoplay, Result=-NODATA-, Recommended=255, Severity=Medium
+ID 18.10.8.1.1, Biometrics: Facial Features: Configure enhanced anti-spoofing, Result=-NODATA-, Recommended=1, Severity=Medium
+ID 18.10.9.1.1, BitLocker Drive Encryption: Fixed Data Drives: Allow access to BitLocker-protected fixed data drives from earlier versions of Windows, Result=-NODATA-, Recommended=<none>, Severity=Medium
+ID 18.10.9.1.2, BitLocker Drive Encryption: Fixed Data Drives: Choose how BitLocker-protected fixed drives can be recovered, Result=-NODATA-, Recommended=1, Severity=Medium
+ID 18.10.9.1.3, BitLocker Drive Encryption: Fixed Data Drives: Choose how BitLocker-protected fixed drives can be recovered: Allow data recovery agent, Result=-NODATA-, Recommended=1, Severity=Medium
+ID 18.10.9.1.4, BitLocker Drive Encryption: Fixed Data Drives: Choose how BitLocker-protected fixed drives can be recovered: Recovery Password, Result=-NODATA-, Recommended=2, Severity=Medium
+ID 18.10.9.1.5, BitLocker Drive Encryption: Fixed Data Drives: Choose how BitLocker-protected fixed drives can be recovered: Recovery Key, Result=-NODATA-, Recommended=2, Severity=Medium
+ID 18.10.9.1.6, BitLocker Drive Encryption: Fixed Data Drives: Choose how BitLocker-protected fixed drives can be recovered: Omit recovery options from the BitLocker setup wizard, Result=-NODATA-, Recommended=1, Severity=Medium
+ID 18.10.9.1.7, BitLocker Drive Encryption: Fixed Data Drives: Choose how BitLocker-protected fixed drives can be recovered: Save BitLocker recovery information to AD DS for fixed data drives, Result=-NODATA-, Recommended=0, Severity=Medium
+ID 18.10.9.1.8, BitLocker Drive Encryption: Fixed Data Drives: Choose how BitLocker-protected fixed drives can be recovered: Configure storage of BitLocker recovery information to AD DS, Result=-NODATA-, Recommended=1, Severity=Medium
+ID 18.10.9.1.9, BitLocker Drive Encryption: Fixed Data Drives: Choose how BitLocker-protected fixed drives can be recovered: Do not enable BitLocker until recovery information is stored to AD DS for fixed data drives, Result=-NODATA-, Recommended=0, Severity=Medium
+ID 18.10.9.1.10, BitLocker Drive Encryption: Fixed Data Drives: Configure use of hardware-based encryption for fixed data drives, Result=-NODATA-, Recommended=0, Severity=Medium
+ID 18.10.9.1.11, BitLocker Drive Encryption: Fixed Data Drives: Configure use of passwords for fixed data drives, Result=-NODATA-, Recommended=0, Severity=Medium
+ID 18.10.9.1.12, BitLocker Drive Encryption: Fixed Data Drives: Configure use of smart cards on fixed data drives, Result=-NODATA-, Recommended=1, Severity=Medium
+ID 18.10.9.1.13, BitLocker Drive Encryption: Fixed Data Drives: Configure use of smart cards on fixed data drives: Require use of smart cards on fixed data drives, Result=-NODATA-, Recommended=1, Severity=Medium
+ID 18.10.9.2.1, BitLocker Drive Encryption: Operating System Drives: Allow enhanced PINs for startup, Result=-NODATA-, Recommended=1, Severity=Medium
+ID 18.10.9.2.2, BitLocker Drive Encryption: Operating System Drives: Allow Secure Boot for integrity validation, Result=-NODATA-, Recommended=1, Severity=Medium
+ID 18.10.9.2.3, BitLocker Drive Encryption: Operating System Drives: Choose how BitLocker-protected operating system drives can be recovered, Result=-NODATA-, Recommended=1, Severity=Medium
+ID 18.10.9.2.4, BitLocker Drive Encryption: Operating System Drives: Choose how BitLocker-protected operating system drives can be recovered: Allow data recovery agent, Result=-NODATA-, Recommended=0, Severity=Medium
+ID 18.10.9.2.5, BitLocker Drive Encryption: Operating System Drives: Choose how BitLocker-protected operating system drives can be recovered: Recovery Password, Result=-NODATA-, Recommended=1, Severity=Medium
+ID 18.10.9.2.6, BitLocker Drive Encryption: Operating System Drives: Choose how BitLocker-protected operating system drives can be recovered: Recovery Key, Result=-NODATA-, Recommended=0, Severity=Medium
+ID 18.10.9.2.7, BitLocker Drive Encryption: Operating System Drives: Choose how BitLocker-protected operating system drives can be recovered: Omit recovery options from the BitLocker setup wizard, Result=-NODATA-, Recommended=1, Severity=Medium
+ID 18.10.9.2.8, BitLocker Drive Encryption: Operating System Drives: Choose how BitLocker-protected operating system drives can be recovered: Save BitLocker recovery information to AD DS for operating system drives, Result=-NODATA-, Recommended=1, Severity=Medium
+ID 18.10.9.2.9, BitLocker Drive Encryption: Operating System Drives: Choose how BitLocker-protected operating system drives can be recovered: Configure storage of BitLocker recovery information to AD DS, Result=-NODATA-, Recommended=1, Severity=Medium
+ID 18.10.9.2.10, BitLocker Drive Encryption: Operating System Drives: Choose how BitLocker-protected operating system drives can be recovered: Do not enable BitLocker until recovery information is stored to AD DS for operating system drives, Result=-NODATA-, Recommended=1, Severity=Medium
+ID 18.10.9.2.11, BitLocker Drive Encryption: Operating System Drives: Configure use of hardware-based encryption for operating system drives: Restrict crypto algorithms or cipher suites, Result=-NODATA-, Recommended=2.16.840.1.101.3.4.1.2;2.16.840.1.101.3.4.1.42, Severity=Medium
+ID 18.10.9.2.12, BitLocker Drive Encryption: Operating System Drives: Configure use of passwords for operating system drives, Result=-NODATA-, Recommended=0, Severity=Medium
+ID 18.10.9.2.13, BitLocker Drive Encryption: Operating System Drives: Require additional authentication at startup, Result=-NODATA-, Recommended=1, Severity=Medium
+ID 18.10.9.2.14, BitLocker Drive Encryption: Operating System Drives: Require additional authentication at startup: Allow BitLocker without a compatible TPM, Result=-NODATA-, Recommended=0, Severity=Medium
+ID 18.10.9.2.15, BitLocker Drive Encryption: Operating System Drives: Require additional authentication at startup: Configure TPM startup, Result=-NODATA-, Recommended=0, Severity=Medium
+ID 18.10.9.2.16, BitLocker Drive Encryption: Operating System Drives: Require additional authentication at startup: Configure TPM startup PIN, Result=-NODATA-, Recommended=1, Severity=Medium
+ID 18.10.9.2.17, BitLocker Drive Encryption: Operating System Drives: Require additional authentication at startup: Configure TPM startup key, Result=-NODATA-, Recommended=0, Severity=Medium
+ID 18.10.9.2.18, BitLocker Drive Encryption: Operating System Drives: Require additional authentication at startup: Configure TPM startup key and PIN, Result=-NODATA-, Recommended=0, Severity=Medium
+ID 18.10.9.3.1, BitLocker Drive Encryption: Removable Data Drives: Allow access to BitLocker-protected removable data drives from earlier versions of Windows, Result=-NODATA-, Recommended=<none>, Severity=Medium
+ID 18.10.9.3.2, BitLocker Drive Encryption: Removable Data Drives: Choose how BitLocker-protected removable drives can be recovered, Result=-NODATA-, Recommended=1, Severity=Medium
+ID 18.10.9.3.3, BitLocker Drive Encryption: Removable Data Drives: Choose how BitLocker-protected removable drives can be recovered: Allow data recovery agent, Result=-NODATA-, Recommended=1, Severity=Medium
+ID 18.10.9.3.4, BitLocker Drive Encryption: Removable Data Drives: Choose how BitLocker-protected removable drives can be recovered: Recovery Password, Result=-NODATA-, Recommended=0, Severity=Medium
+ID 18.10.9.3.5, BitLocker Drive Encryption: Removable Data Drives: Choose how BitLocker-protected removable drives can be recovered: Recovery Key, Result=-NODATA-, Recommended=0, Severity=Medium
+ID 18.10.9.3.6, BitLocker Drive Encryption: Removable Data Drives: Choose how BitLocker-protected removable drives can be recovered: Omit recovery options from the BitLocker setup wizard, Result=-NODATA-, Recommended=1, Severity=Medium
+ID 18.10.9.3.7, BitLocker Drive Encryption: Removable Data Drives: Choose how BitLocker-protected removable drives can be recovered: Save BitLocker recovery information to AD DS for removable data drives, Result=-NODATA-, Recommended=0, Severity=Medium
+ID 18.10.9.3.8, BitLocker Drive Encryption: Removable Data Drives: Choose how BitLocker-protected removable drives can be recovered: Configure storage of BitLocker recovery information to AD DS, Result=-NODATA-, Recommended=1, Severity=Medium
+ID 18.10.9.3.9, BitLocker Drive Encryption: Removable Data Drives: Choose how BitLocker-protected removable drives can be recovered: Choose how BitLocker-protected removable drives can be recovered: Do not enable BitLocker until recovery information is stored to AD DS for removable data drives, Result=-NODATA-, Recommended=0, Severity=Medium
+ID 18.10.9.3.10, BitLocker Drive Encryption: Removable Data Drives: Configure use of hardware-based encryption for removable data drives, Result=-NODATA-, Recommended=1, Severity=Medium
+ID 18.10.9.3.11, BitLocker Drive Encryption: Removable Data Drives: Configure use of passwords for removable data drives, Result=-NODATA-, Recommended=0, Severity=Medium
+ID 18.10.9.3.12, BitLocker Drive Encryption: Removable Data Drives: Configure use of smart cards on removable data drives, Result=-NODATA-, Recommended=1, Severity=Medium
+ID 18.10.9.3.13, BitLocker Drive Encryption: Removable Data Drives: Configure use of smart cards on removable data drives: Require use of smart cards on removable data drives, Result=-NODATA-, Recommended=1, Severity=Medium
+ID 18.10.9.3.14, BitLocker Drive Encryption: Removable Data Drives: Deny write access to removable drives not protected by BitLocker, Result=-NODATA-, Recommended=1, Severity=Medium
+ID 18.10.9.3.15, BitLocker Drive Encryption: Removable Data Drives: Do not allow write access to devices configured in another organization, Result=-NODATA-, Recommended=0, Severity=Medium
+ID 18.10.9.4, BitLocker Drive Encryption: Disable new DMA devices when this computer is locked, Result=-NODATA-, Recommended=1, Severity=Medium
+ID 18.10.10.1, Camera: Allow Use of Camera, Result=-NODATA-, Recommended=0, Severity=Medium
+ID 18.10.12.1, Cloud Content: Turn off cloud consumer account state content, Result=-NODATA-, Recommended=1, Severity=Medium
+ID 18.10.12.2, Cloud Content: Turn off cloud optimized content, Result=-NODATA-, Recommended=1, Severity=Medium
+ID 18.10.12.3, Cloud Content: Turn off Microsoft consumer experiences, Result=-NODATA-, Recommended=1, Severity=Medium
+ID 18.10.13.1, Connect: Require pin for pairing, Result=-NODATA-, Recommended=1, Severity=Medium
+ID 18.10.14.1, Credential User Interface: Do not display the password reveal button, Result=-NODATA-, Recommended=1, Severity=Medium
+ID 18.10.14.2, Credential User Interface: Enumerate administrator accounts on elevation, Result=-NODATA-, Recommended=0, Severity=Medium
+ID 18.10.14.3, Credential User Interface: Prevent the use of security questions for local accounts, Result=-NODATA-, Recommended=1, Severity=Medium
+ID 18.10.15.1, Data Collection and Preview Builds: Allow Diagnostic Data, Result=-NODATA-, Recommended=1, Severity=Medium
+ID 18.10.15.2, Data Collection and Preview Builds: Configure Authenticated Proxy usage for the Connected User Experience and Telemetry service, Result=-NODATA-, Recommended=1, Severity=Medium
+ID 18.10.15.3, Data Collection and Preview Builds: Disable OneSettings Downloads, Result=-NODATA-, Recommended=1, Severity=Medium
+ID 18.10.15.4, Data Collection and Preview Builds: Do not show feedback notifications, Result=-NODATA-, Recommended=1, Severity=Medium
+ID 18.10.15.5, Data Collection and Preview Builds: Enable OneSettings Auditing, Result=-NODATA-, Recommended=1, Severity=Medium
+ID 18.10.15.6, Data Collection and Preview Builds: Limit Diagnostic Log Collection, Result=-NODATA-, Recommended=1, Severity=Medium
+ID 18.10.15.7, Data Collection and Preview Builds: Limit Dump Collection, Result=-NODATA-, Recommended=1, Severity=Medium
+ID 18.10.15.8, Data Collection and Preview Builds: Toggle user control over Insider builds, Result=-NODATA-, Recommended=0, Severity=Medium
+ID 18.10.16.1, Delivery Optimization: Download Mode, Result=-NODATA-, Recommended=2, Severity=Medium
+ID 18.10.17.1, Desktop App Installer: Enable App Installer, Result=-NODATA-, Recommended=0, Severity=Medium
+ID 18.10.17.2, Desktop App Installer: Enable App Installer Experimental Features, Result=-NODATA-, Recommended=0, Severity=Medium
+ID 18.10.17.3, Desktop App Installer: Enable App Installer Hash Override, Result=-NODATA-, Recommended=0, Severity=Medium
+ID 18.10.17.4, Desktop App Installer: Enable App Installer ms-appinstaller protocol, Result=-NODATA-, Recommended=0, Severity=Medium
+ID 18.10.25.1.1, Event Log Service: Application: Control Event Log behavior when the log file reaches its maximum size, Result=-NODATA-, Recommended=0, Severity=Medium
+ID 18.10.25.1.2, Event Log Service: Application: Specify the maximum log file size (KB), Result=-NODATA-, Recommended=32768, Severity=Medium
+ID 18.10.25.2.1, Event Log Service: Security: Control Event Log behavior when the log file reaches its maximum size, Result=-NODATA-, Recommended=0, Severity=Medium
+ID 18.10.25.2.2, Event Log Service: Security: Specify the maximum log file size (KB), Result=-NODATA-, Recommended=196608, Severity=Medium
+ID 18.10.25.3.1, Event Log Service: Setup: Control Event Log behavior when the log file reaches its maximum size, Result=-NODATA-, Recommended=0, Severity=Medium
+ID 18.10.25.3.2, Event Log Service: Setup: Specify the maximum log file size (KB), Result=-NODATA-, Recommended=32768, Severity=Medium
+ID 18.10.25.4.1, Event Log Service: System: Control Event Log behavior when the log file reaches its maximum size, Result=-NODATA-, Recommended=0, Severity=Medium
+ID 18.10.25.4.2, Event Log Service: System: Specify the maximum log file size (KB), Result=-NODATA-, Recommended=32768, Severity=Medium
+ID 18.10.28.2, File Explorer: Turn off Data Execution Prevention for Explorer, Result=-NODATA-, Recommended=0, Severity=Medium
+ID 18.10.28.3, File Explorer: Turn off files from Office.com in Quick access view, Result=-NODATA-, Recommended=1, Severity=Medium
+ID 18.10.28.4, File Explorer: Turn off heap termination on corruption, Result=-NODATA-, Recommended=0, Severity=Medium
+ID 18.10.28.5, File Explorer: Turn off shell protocol protected mode, Result=-NODATA-, Recommended=0, Severity=Medium
+ID 18.10.36.1, Location and Sensors: Turn off location, Result=-NODATA-, Recommended=1, Severity=Medium
+ID 18.10.40.1, Messaging: Allow Message Service Cloud Sync, Result=0, Recommended=0, Severity=Passed
+ID 18.10.41.1, Microsoft account: Block all consumer Microsoft account user authentication, Result=-NODATA-, Recommended=1, Severity=Medium
+[*] 24/05/2025 07:30:42 - Starting Category Microsoft Defender Antivirus
+ID 18.10.42.4.1, MAPS: Configure local setting override for reporting to Microsoft MAPS, Result=-NODATA-, Recommended=0, Severity=Medium
+ID 18.10.42.4.2, MAPS: Join Microsoft MAPS, Result=-NODATA-, Recommended=0, Severity=Medium
+[*] 24/05/2025 07:30:42 - Starting Category Microsoft Defender Exploit Guard
+ID 18.10.42.5.1.1, Attack Surface Reduction rules, Result=-NODATA-, Recommended=1, Severity=Medium
+ID 18.10.42.6.1.2.1.1, ASR: Block all Office applications from creating child processes (Policy), Result=-NODATA-, Recommended=1, Severity=Medium
+ID 18.10.42.6.1.2.1.2, ASR: Block all Office applications from creating child processes, Result=0, Recommended=1, Severity=Medium
+ID 18.10.42.6.1.2.2.1, ASR: Block Office applications from creating executable content (Policy), Result=-NODATA-, Recommended=1, Severity=Medium
+ID 18.10.42.6.1.2.2.2, ASR: Block Office applications from creating executable content, Result=0, Recommended=1, Severity=Medium
+ID 18.10.42.6.1.2.3.1, ASR: Block execution of potentially obfuscated scripts (Policy), Result=-NODATA-, Recommended=1, Severity=Medium
+ID 18.10.42.6.1.2.3.2, ASR: Block execution of potentially obfuscated scripts, Result=0, Recommended=1, Severity=Medium
+ID 18.10.42.6.1.2.4.1, ASR: Block Office applications from injecting code into other processes (Policy), Result=-NODATA-, Recommended=1, Severity=Medium
+ID 18.10.42.6.1.2.4.2, ASR: Block Office applications from injecting code into other processes, Result=0, Recommended=1, Severity=Medium
+ID 18.10.42.6.1.2.5.1, ASR: Block Adobe Reader from creating child processes (Policy), Result=-NODATA-, Recommended=1, Severity=Medium
+ID 18.10.42.6.1.2.5.2, ASR: Block Adobe Reader from creating child processes, Result=0, Recommended=1, Severity=Medium
+ID 18.10.42.6.1.2.6.1, ASR: Block Win32 API calls from Office macros (Policy), Result=-NODATA-, Recommended=1, Severity=Medium
+ID 18.10.42.6.1.2.6.2, ASR: Block Win32 API calls from Office macros, Result=0, Recommended=1, Severity=Medium
+ID 18.10.42.6.1.2.7.1, ASR: Block credential stealing from the Windows local security authority subsystem (lsass.exe) (Policy), Result=-NODATA-, Recommended=1, Severity=Medium
+ID 18.10.42.6.1.2.7.2, ASR: Block credential stealing from the Windows local security authority subsystem (lsass.exe), Result=0, Recommended=1, Severity=Medium
+ID 18.10.42.6.1.2.8.1, ASR: Block untrusted and unsigned processes that run from USB (Policy), Result=-NODATA-, Recommended=1, Severity=Medium
+ID 18.10.42.6.1.2.8.2, ASR: Block untrusted and unsigned processes that run from USB, Result=0, Recommended=1, Severity=Medium
+ID 18.10.42.6.1.2.9.1, ASR: Block executable content from email client and webmail (Policy), Result=-NODATA-, Recommended=1, Severity=Medium
+ID 18.10.42.6.1.2.9.2, ASR: Block executable content from email client and webmail, Result=0, Recommended=1, Severity=Medium
+ID 18.10.42.6.1.2.10.1, ASR: Block JavaScript or VBScript from launching downloaded executable content (Policy), Result=-NODATA-, Recommended=1, Severity=Medium
+ID 18.10.42.6.1.2.10.2, ASR: Block JavaScript or VBScript from launching downloaded executable content, Result=0, Recommended=1, Severity=Medium
+ID 18.10.42.6.1.2.11.1, ASR: Block Office communication application from creating child processes (Policy), Result=-NODATA-, Recommended=1, Severity=Medium
+ID 18.10.42.6.1.2.11.2, ASR: Block Office communication application from creating child processes, Result=0, Recommended=1, Severity=Medium
+ID 18.10.42.6.1.2.12.1, ASR: Block persistence through WMI event subscription (Policy), Result=-NODATA-, Recommended=1, Severity=Medium
+ID 18.10.42.6.1.2.12.2, ASR: Block persistence through WMI event subscription, Result=0, Recommended=1, Severity=Medium
+ID 18.10.42.6.1.2.13.1, ASR: Block abuse of exploited vulnerable signed drivers (Policy), Result=-NODATA-, Recommended=1, Severity=Medium
+ID 18.10.42.6.1.2.13.1, ASR: Block abuse of exploited vulnerable signed drivers, Result=0, Recommended=1, Severity=Medium
+ID 18.10.42.6.3.1, Network Protection: Prevent users and apps from accessing dangerous websites, Result=-NODATA-, Recommended=1, Severity=Medium
+[*] 24/05/2025 07:30:43 - Starting Category Microsoft Defender Antivirus
+ID 18.10.42.7.1, MpEngine: Enable file hash computation feature, Result=-NODATA-, Recommended=1, Severity=Medium
+ID 18.10.42.10.1, Real-time Protection: Scan all downloaded files and attachments, Result=-NODATA-, Recommended=0, Severity=Medium
+ID 18.10.42.10.2, Real-time Protection: Turn off real-time protection, Result=-NODATA-, Recommended=0, Severity=Medium
+ID 18.10.42.10.3, Real-time Protection: Turn on behavior monitoring (Policy), Result=-NODATA-, Recommended=0, Severity=Medium
+ID 18.10.42.10.4, Real-time Protection: Turn on script scanning, Result=-NODATA-, Recommended=0, Severity=Medium
+ID 18.10.42.12.1, Reporting: Configure Watson events, Result=-NODATA-, Recommended=1, Severity=Medium
+ID 18.10.42.13.1, Scan: Scan packed executables, Result=-NODATA-, Recommended=0, Severity=Medium
+ID 18.10.42.13.2, Scan: Scan removable drives, Result=-NODATA-, Recommended=0, Severity=Medium
+ID 18.10.42.13.3, Scan: Turn on e-mail scanning, Result=-NODATA-, Recommended=0, Severity=Medium
+ID 18.10.42.16, Configure detection for potentially unwanted applications, Result=-NODATA-, Recommended=1, Severity=Medium
+ID 18.10.42.17, Turn off Microsoft Defender Antivirus, Result=-NODATA-, Recommended=0, Severity=Medium
+[*] 24/05/2025 07:30:43 - Starting Category Microsoft Defender Application Guard
+ID 18.10.43.1, Allow auditing events in Microsoft Defender Application Guard, Result=-NODATA-, Recommended=1, Severity=Medium
+ID 18.10.43.2, Allow camera and microphone access in Microsoft Defender Application Guard, Result=-NODATA-, Recommended=0, Severity=Medium
+ID 18.10.43.3, Allow data persistence for Microsoft Defender Application Guard, Result=-NODATA-, Recommended=0, Severity=Medium
+ID 18.10.43.4, Allow files to download and save to the host operating system from Microsoft Defender Application Guard, Result=-NODATA-, Recommended=0, Severity=Medium
+ID 18.10.43.5, Configure Microsoft Defender Application Guard clipboard settings: Clipboard behavior setting, Result=-NODATA-, Recommended=1, Severity=Medium
+ID 18.10.43.6, Turn on Microsoft Defender Application Guard in Managed Mode, Result=-NODATA-, Recommended=1, Severity=Medium
+[*] 24/05/2025 07:30:43 - Starting Category Administrative Templates: Windows Components
+ID 18.10.49.1, News and interests: Enable news and interests on the taskbar, Result=-NODATA-, Recommended=0, Severity=Medium
+ID 18.10.50.1, OneDrive: Prevent the usage of OneDrive for file storage, Result=-NODATA-, Recommended=1, Severity=Medium
+ID 18.10.55.1, Push To Install: Turn off Push To Install service, Result=-NODATA-, Recommended=1, Severity=Medium
+ID 18.10.56.2.2, Remote Desktop Connection Client: Disable Cloud Clipboard integration for server-to-client data transfer, Result=-NODATA-, Recommended=1, Severity=Medium
+ID 18.10.56.2.3, Remote Desktop Connection Client: Do not allow passwords to be saved, Result=-NODATA-, Recommended=1, Severity=Medium
+ID 18.10.56.3.2.1, Remote Desktop Session Host: Allow users to connect remotely by using Remote Desktop Services, Result=-NODATA-, Recommended=1, Severity=Medium
+ID 18.10.56.3.3.1, Remote Desktop Session Host: Device and Resource Redirection: Allow UI Automation redirection, Result=-NODATA-, Recommended=0, Severity=Medium
+ID 18.10.56.3.3.2, Remote Desktop Session Host: Device and Resource Redirection: Do not allow COM port redirection, Result=-NODATA-, Recommended=1, Severity=Medium
+ID 18.10.56.3.3.3, Remote Desktop Session Host: Device and Resource Redirection: Do not allow drive redirection, Result=-NODATA-, Recommended=1, Severity=Medium
+ID 18.10.56.3.3.4, Remote Desktop Session Host: Device and Resource Redirection: Do not allow location redirection, Result=-NODATA-, Recommended=1, Severity=Medium
+ID 18.10.56.3.3.5, Remote Desktop Session Host: Device and Resource Redirection: Do not allow LPT port redirection, Result=-NODATA-, Recommended=1, Severity=Medium
+ID 18.10.56.3.3.6, Remote Desktop Session Host: Device and Resource Redirection: Do not allow supported Plug and Play device redirection, Result=-NODATA-, Recommended=1, Severity=Medium
+ID 18.10.56.3.3.7, Remote Desktop Session Host: Do not allow WebAuthn redirection, Result=-NODATA-, Recommended=1, Severity=Medium
+ID 18.10.56.3.9.1, Remote Desktop Session Host: Security: Always prompt for password upon connection, Result=-NODATA-, Recommended=1, Severity=Medium
+ID 18.10.56.3.9.2, Remote Desktop Session Host: Security: Require secure RPC communication, Result=-NODATA-, Recommended=1, Severity=Medium
+ID 18.10.56.3.9.3, Remote Desktop Session Host: Security: Require use of specific security layer for remote (RDP) connections, Result=-NODATA-, Recommended=2, Severity=Medium
+ID 18.10.56.3.9.4, Remote Desktop Session Host: Security: Require user authentication for remote connections by using Network Level Authentication, Result=-NODATA-, Recommended=1, Severity=Medium
+ID 18.10.56.3.9.5, Remote Desktop Session Host: Security: Set client connection encryption level, Result=-NODATA-, Recommended=3, Severity=Medium
+ID 18.10.56.3.10.1, Remote Desktop Session Host: Session Time Limits: Set time limit for active but idle Remote Desktop Services sessions, Result=-NODATA-, Recommended=900000, Severity=Medium
+ID 18.10.56.3.10.2, Remote Desktop Session Host: Session Time Limits: Set time limit for disconnected sessions, Result=-NODATA-, Recommended=60000, Severity=Medium
+ID 18.10.56.3.11.1, Remote Desktop Session Host: Temporary folders: Do not delete temp folders upon exit, Result=-NODATA-, Recommended=1, Severity=Medium
+ID 18.10.57.1, RSS Feeds: Prevent downloading of enclosures, Result=-NODATA-, Recommended=1, Severity=Medium
+ID 18.10.58.2, Search: Allow Cloud Search, Result=-NODATA-, Recommended=0, Severity=Medium
+ID 18.10.58.3, Search: Allow Cortana, Result=-NODATA-, Recommended=0, Severity=Medium
+ID 18.10.58.4, Search: Allow Cortana above lock screen, Result=-NODATA-, Recommended=0, Severity=Medium
+ID 18.10.58.5, Search: Allow indexing of encrypted files, Result=-NODATA-, Recommended=0, Severity=Medium
+ID 18.10.58.6, Search: Allow search and Cortana to use location, Result=-NODATA-, Recommended=0, Severity=Medium
+ID 18.10.58.7, Search: Allow search highlights, Result=-NODATA-, Recommended=0, Severity=Medium
+ID 18.10.62.1, Software Protection Platform: Turn off KMS Client Online AVS Validation, Result=-NODATA-, Recommended=1, Severity=Medium
+ID 18.10.65.1, Store: Disable all apps from Microsoft Store, Result=-NODATA-, Recommended=1, Severity=Medium
+ID 18.10.65.2, Store: Only display the private store within the Microsoft Store, Result=-NODATA-, Recommended=1, Severity=Medium
+ID 18.10.65.3, Store: Turn off Automatic Download and Install of updates, Result=-NODATA-, Recommended=4, Severity=Medium
+ID 18.10.65.4, Store: Turn off the offer to update to the latest version of Windows, Result=-NODATA-, Recommended=1, Severity=Medium
+ID 18.10.65.5, Store: Turn off the Store application, Result=-NODATA-, Recommended=1, Severity=Medium
+ID 18.10.71.1, Widgest: Allow widgets, Result=-NODATA-, Recommended=0, Severity=Medium
+ID 18.10.75.1.1, Windows Defender SmartScreen: Automatic Data Collection, Result=-NODATA-, Recommended=1, Severity=Medium
+ID 18.10.75.1.2, Windows Defender SmartScreen: Notify Malicious, Result=-NODATA-, Recommended=1, Severity=Medium
+ID 18.10.75.1.3, Windows Defender SmartScreen: Notify Password Reuse, Result=-NODATA-, Recommended=1, Severity=Medium
+ID 18.10.75.1.4, Windows Defender SmartScreen: Notify Unsafe App, Result=-NODATA-, Recommended=1, Severity=Medium
+ID 18.10.75.1.5, Windows Defender SmartScreen: Service Enabled, Result=-NODATA-, Recommended=1, Severity=Medium
+ID 18.10.75.2.1.1, File Explorer: Configure Windows Defender SmartScreen, Result=-NODATA-, Recommended=1, Severity=Medium
+ID 18.10.75.2.1.2, File Explorer: Configure Windows Defender SmartScreen to warn and prevent bypass, Result=-NODATA-, Recommended=Block, Severity=Medium
+ID 18.10.77.1, Windows Game Recording and Broadcasting: Enables or disables Windows Game Recording and Broadcasting, Result=-NODATA-, Recommended=0, Severity=Medium
+ID 18.10.78.1, Windows Hello for Business: Enable ESS with Supported Peripherals, Result=-NODATA-, Recommended=1, Severity=Medium
+ID 18.10.79.1, Windows Ink Workspace: Allow suggested apps in Windows Ink Workspace, Result=-NODATA-, Recommended=0, Severity=Medium
+ID 18.10.79.2, Windows Ink Workspace: Allow Windows Ink Workspace, Result=-NODATA-, Recommended=1, Severity=Medium
+ID 18.10.80.1, Windows Installer: Allow user control over installs, Result=-NODATA-, Recommended=0, Severity=Medium
+ID 18.10.80.2, Windows Installer: Always install with elevated privileges, Result=-NODATA-, Recommended=0, Severity=Medium
+ID 18.10.80.3, Windows Installer: Prevent Internet Explorer security prompt for Windows Installer scripts, Result=-NODATA-, Recommended=0, Severity=Medium
+ID 18.10.81.1, Windows Logon Options: Configure the transmission of the user's password in the content of MPR notifications sent by winlogon, Result=-NODATA-, Recommended=0, Severity=Medium
+ID 18.10.81.2, Windows Logon Options: Sign-in and lock last interactive user automatically after a restart, Result=-NODATA-, Recommended=1, Severity=Medium
+[*] 24/05/2025 07:30:44 - Starting Category PowerShell
+ID 18.10.86.1, Turn on PowerShell Script Block Logging, Result=-NODATA-, Recommended=1, Severity=Medium
+ID 18.10.86.2, Turn on PowerShell Transcription, Result=-NODATA-, Recommended=1, Severity=Medium
+[*] 24/05/2025 07:30:44 - Starting Category Administrative Templates: Windows Components
+ID 18.10.88.1.1, WinRM Client: Allow Basic authentication, Result=-NODATA-, Recommended=0, Severity=Medium
+ID 18.10.88.1.2, WinRM Client: Allow unencrypted traffic, Result=-NODATA-, Recommended=0, Severity=Medium
+ID 18.10.88.1.3, WinRM Client: Disallow Digest authentication, Result=-NODATA-, Recommended=0, Severity=Medium
+ID 18.10.88.2.1, WinRM Service: Allow Basic authentication, Result=-NODATA-, Recommended=0, Severity=Medium
+ID 18.10.88.2.2, WinRM Service: Allow remote server management through WinRM, Result=-NODATA-, Recommended=0, Severity=Medium
+ID 18.10.88.2.3, WinRM Service: Allow unencrypted traffic, Result=-NODATA-, Recommended=0, Severity=Medium
+ID 18.10.88.2.4, WinRM Service: Disallow WinRM from storing RunAs credentials, Result=-NODATA-, Recommended=1, Severity=Medium
+ID 18.10.89.1, Windows Remote Shell: Allow Remote Shell Access, Result=-NODATA-, Recommended=0, Severity=Medium
+ID 18.10.90.1, Windows Sandbox: Allow clipboard sharing with Windows Sandbox, Result=-NODATA-, Recommended=0, Severity=Medium
+ID 18.10.90.2, Windows Sandbox: Allow networking in Windows Sandbox, Result=-NODATA-, Recommended=0, Severity=Medium
+ID 18.10.91.2.1, App and browser protection: Prevent users from modifying settings, Result=-NODATA-, Recommended=1, Severity=Medium
+ID 18.10.92.1.1, Windows Update: Legacy Policies: No auto-restart with logged on users for scheduled automatic updates installations, Result=-NODATA-, Recommended=0, Severity=Medium
+ID 18.10.92.2.1, Windows Update: Manage end user experience: Configure Automatic Updates, Result=-NODATA-, Recommended=0, Severity=Medium
+ID 18.10.92.2.2, Windows Update: Manage end user experience: Configure Automatic Updates: Scheduled install day, Result=-NODATA-, Recommended=0, Severity=Medium
+ID 18.10.92.2.3, Windows Update: Manage end user experience: Remove access to 'Pause updates' feature, Result=-NODATA-, Recommended=1, Severity=Medium
+ID 18.10.92.2.4, Windows Update: Manage end user experience: Enable features introduced via servicing that are off by default, Result=-NODATA-, Recommended=0, Severity=Medium
+ID 18.10.92.4.1.1, Windows Update: Manage updates offered from Windows Update: Manage preview builds (ManagePreviewBuilds), Result=-NODATA-, Recommended=1, Severity=Medium
+ID 18.10.92.4.1.2, Windows Update: Manage updates offered from Windows Update: Manage preview builds (ManagePreviewBuildsPolicyValue), Result=-NODATA-, Recommended=0, Severity=Medium
+ID 18.10.92.4.2.1, Windows Update: Manage updates offered from Windows Update: Select when Preview Builds and Feature Updates are received (DeferFeatureUpdates), Result=-NODATA-, Recommended=1, Severity=Medium
+ID 18.10.92.4.2.2, Windows Update: Manage updates offered from Windows Update: Select when Preview Builds and Feature Updates are received (BranchReadinessLevel), Result=-NODATA-, Recommended=2, Severity=Low
+ID 18.10.92.4.2.3, Windows Update: Manage updates offered from Windows Update: Select when Preview Builds and Feature Updates are received (DeferFeatureUpdatesPeriodInDays), Result=-NODATA-, Recommended=180, Severity=Medium
+ID 18.10.92.4.3.1, Windows Update: Manage updates offered from Windows Update: Select when Quality Updates are received (DeferQualityUpdates), Result=-NODATA-, Recommended=1, Severity=Medium
+ID 18.10.92.4.3.2, Windows Update: Manage updates offered from Windows Update: Select when Quality Updates are received (DeferQualityUpdatesPeriodInDays), Result=-NODATA-, Recommended=0, Severity=Medium
+ID 18.10.92.4.4, Windows Update: Manage updates offered from Windows Update: Enable optional updates, Result=-NODATA-, Recommended=0, Severity=Medium
+[*] 24/05/2025 07:30:44 - HardeningKitty is done
+[*] 24/05/2025 07:30:48 - Your HardeningKitty score is: 2.87. HardeningKitty Statistics: Total checks: 621 - Passed: 88, Low: 46, Medium: 486, High: 1.

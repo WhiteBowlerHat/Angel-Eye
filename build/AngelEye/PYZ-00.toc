@@ -1,4 +1,4 @@
-('C:\\Users\\theim\\Projets\\AngelEye\\build\\AngelEye\\PYZ-00.pyz',
+('C:\\Users\\theim\\Projets\\Angel-Eye\\build\\AngelEye\\PYZ-00.pyz',
  [('PySide6',
    'C:\\Users\\theim\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\PySide6\\__init__.py',
    'PYMODULE'),
